@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Osama Sakhi</title>
+    <link>http://osama.sakhi.es/tags/</link>
+    <description>Recent content in Tags on Osama Sakhi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Osama Sakhi &amp;copy; 2018</copyright>
+    <lastBuildDate>Tue, 31 Jul 2018 23:09:17 -0400</lastBuildDate>
+    
+	<atom:link href="http://osama.sakhi.es/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://osama.sakhi.es/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSE</title>
+      <link>http://osama.sakhi.es/tags/cse/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/cse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>http://osama.sakhi.es/tags/computer-vision/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grad School</title>
+      <link>http://osama.sakhi.es/tags/grad-school/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/grad-school/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://osama.sakhi.es/tags/machine-learning/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>http://osama.sakhi.es/tags/nlp/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/nlp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantum Mechanics</title>
+      <link>http://osama.sakhi.es/tags/quantum-mechanics/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/quantum-mechanics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>http://osama.sakhi.es/tags/teaching/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

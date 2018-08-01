@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Osama Sakhi on Osama Sakhi</title>
+    <link>http://osama.sakhi.es/</link>
+    <description>Recent content in Osama Sakhi on Osama Sakhi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Osama Sakhi &amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>I Left My Job to Teach High-Schoolers at a Summer Camp, Here&#39;s What I Learned</title>
+      <link>http://osama.sakhi.es/post/teaching_at_tip/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/post/teaching_at_tip/</guid>
+      <description>&lt;p&gt;In Summer 2018, I became an Instructor for two courses offered by &lt;a href=&#34;https://tip.duke.edu/&#34; target=&#34;_blank&#34;&gt;Duke TIP&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/applications-algorithms-computers-modern-programming-0&#34; target=&#34;_blank&#34;&gt;Applications, Algorithms, Computers: Modern Programming&lt;/a&gt; @ Rice University&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/artificial-intelligence&#34; target=&#34;_blank&#34;&gt;Artificial Intelligence&lt;/a&gt; @ Georgia Tech&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Through this experience, I learned to design courses end-to-end, including crafting syllabi, conducting lectures, creating assignments, &amp;amp; engaging in parent-teacher conferences.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Course Lineup 2018</title>
+      <link>http://osama.sakhi.es/post/fall2018_courses/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/post/fall2018_courses/</guid>
+      <description>&lt;p&gt;In Fall 2018, he will be taking the following courses:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quantum Mechanics&lt;/li&gt;
+&lt;li&gt;Computer Vision&lt;/li&gt;
+&lt;li&gt;Computational Data Analysis&lt;/li&gt;
+&lt;li&gt;CSE Algorithms&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
