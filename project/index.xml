@@ -2,23 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Osama Sakhi</title>
-    <link>http://osama.sakhi.es/project/</link>
+    <link>http://sakhi.es/project/</link>
     <description>Recent content in Projects on Osama Sakhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="http://osama.sakhi.es/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sakhi.es/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SUMO Challenge</title>
-      <link>http://osama.sakhi.es/project/sumo/</link>
+      <link>http://sakhi.es/project/sumo/</link>
       <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
       
-      <guid>http://osama.sakhi.es/project/sumo/</guid>
+      <guid>http://sakhi.es/project/sumo/</guid>
       <description>In Fall 2018, I joined Zhile Ren and Frank Dellaert on the SUMO Challenge by Facebook.</description>
+    </item>
+    
+    <item>
+      <title>Betweenness Centrality for Streaming Graphs</title>
+      <link>http://sakhi.es/project/hpc/</link>
+      <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>http://sakhi.es/project/hpc/</guid>
+      <description>In Fall 2016, I joined Oded Green to work on Computing Betweenness Centrality on dynamically changing graphs, also known as Streaming Graphs.</description>
     </item>
     
   </channel>

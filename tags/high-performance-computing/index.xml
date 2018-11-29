@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Research on Osama Sakhi</title>
-    <link>http://sakhi.es/categories/research/</link>
-    <description>Recent content in Research on Osama Sakhi</description>
+    <title>High Performance Computing on Osama Sakhi</title>
+    <link>http://sakhi.es/tags/high-performance-computing/</link>
+    <description>Recent content in High Performance Computing on Osama Sakhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 29 Nov 2018 10:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 10:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://sakhi.es/categories/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sakhi.es/tags/high-performance-computing/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>SUMO Challenge</title>
-      <link>http://sakhi.es/project/sumo/</link>
-      <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
-      
-      <guid>http://sakhi.es/project/sumo/</guid>
-      <description>In Fall 2018, I joined Zhile Ren and Frank Dellaert on the SUMO Challenge by Facebook.</description>
-    </item>
     
     <item>
       <title>Betweenness Centrality for Streaming Graphs</title>

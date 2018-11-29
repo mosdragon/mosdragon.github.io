@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Osama Sakhi</title>
-    <link>http://osama.sakhi.es/post/</link>
+    <link>http://sakhi.es/post/</link>
     <description>Recent content in Posts on Osama Sakhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="http://osama.sakhi.es/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sakhi.es/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Speaking at TEDxGeorgiaTech&#39;s Fall 2018 Speaker Salon</title>
-      <link>http://osama.sakhi.es/post/ted/</link>
+      <link>http://sakhi.es/post/ted/</link>
       <pubDate>Thu, 29 Nov 2018 10:10:00 +0000</pubDate>
       
-      <guid>http://osama.sakhi.es/post/ted/</guid>
+      <guid>http://sakhi.es/post/ted/</guid>
       <description>In Fall 2018, I decided to apply to be a speaker for TEDxGeorgiaTech. I was chosen as one of the 6 speakers among 70 applicants.
 For the 6 weeks that followed, I rewrote my speech several times over, memorized for hours at a time, and struggled to master hand gestures and vocal intonations.
 Finally, on November 4th, 2018, my hard would paid. I was chosen to be the speaker that closed out the show.</description>
@@ -25,10 +25,10 @@ Finally, on November 4th, 2018, my hard would paid. I was chosen to be the speak
     
     <item>
       <title>Course Lineup 2018</title>
-      <link>http://osama.sakhi.es/post/fall2018_courses/</link>
+      <link>http://sakhi.es/post/fall2018_courses/</link>
       <pubDate>Sat, 04 Aug 2018 23:09:10 -0400</pubDate>
       
-      <guid>http://osama.sakhi.es/post/fall2018_courses/</guid>
+      <guid>http://sakhi.es/post/fall2018_courses/</guid>
       <description>In Fall 2018, he will be taking the following courses:
  Quantum Mechanics - CHEM 6495 Computer Vision - CS 6476 CSE Algorithms - CSE 6140  In Addition, I will be involved with the following:
  SUMO Challenge with Zhile Ren and Frank Dellaert TEDxGeorgiaTech as a Speaker  </description>
@@ -36,10 +36,10 @@ Finally, on November 4th, 2018, my hard would paid. I was chosen to be the speak
     
     <item>
       <title>I Left My Job to Teach High-Schoolers at a Summer Camp, Here&#39;s What I Learned</title>
-      <link>http://osama.sakhi.es/post/teaching_at_tip/</link>
+      <link>http://sakhi.es/post/teaching_at_tip/</link>
       <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
       
-      <guid>http://osama.sakhi.es/post/teaching_at_tip/</guid>
+      <guid>http://sakhi.es/post/teaching_at_tip/</guid>
       <description>In Summer 2018, I became an Instructor for two courses offered by Duke TIP:
  Applications, Algorithms, Computers: Modern Programming @ Rice University Artificial Intelligence @ Georgia Tech  Through this experience, I learned to design courses end-to-end, including crafting syllabi, conducting lectures, creating assignments, &amp;amp; engaging in parent-teacher conferences.</description>
     </item>

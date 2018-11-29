@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on Osama Sakhi</title>
-    <link>http://osama.sakhi.es/talk/</link>
+    <link>http://sakhi.es/talk/</link>
     <description>Recent content in Recent &amp; Upcoming Talks on Osama Sakhi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
     
-	<atom:link href="http://osama.sakhi.es/talk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://sakhi.es/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
