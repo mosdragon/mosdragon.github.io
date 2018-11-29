@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TEDx on Osama Sakhi</title>
+    <link>http://osama.sakhi.es/tags/tedx/</link>
+    <description>Recent content in TEDx on Osama Sakhi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Osama Sakhi &amp;copy; 2018</copyright>
+    <lastBuildDate>Thu, 29 Nov 2018 10:10:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://osama.sakhi.es/tags/tedx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speaking at TEDxGeorgiaTech&#39;s Fall 2018 Speaker Salon</title>
+      <link>http://osama.sakhi.es/post/ted/</link>
+      <pubDate>Thu, 29 Nov 2018 10:10:00 +0000</pubDate>
+      
+      <guid>http://osama.sakhi.es/post/ted/</guid>
+      <description>In Fall 2018, I decided to apply to be a speaker for TEDxGeorgiaTech. I was chosen as one of the 6 speakers among 70 applicants.
+For the 6 weeks that followed, I rewrote my speech several times over, memorized for hours at a time, and struggled to master hand gestures and vocal intonations.
+Finally, on November 4th, 2018, my hard would paid. I was chosen to be the speaker that closed out the show.</description>
+    </item>
+    
+  </channel>
+</rss>

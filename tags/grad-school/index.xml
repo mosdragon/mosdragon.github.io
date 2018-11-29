@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 31 Jul 2018 23:09:10 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 04 Aug 2018 23:09:10 -0400</lastBuildDate>
     
 	<atom:link href="http://osama.sakhi.es/tags/grad-school/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,12 @@
     <item>
       <title>Course Lineup 2018</title>
       <link>http://osama.sakhi.es/post/fall2018_courses/</link>
-      <pubDate>Tue, 31 Jul 2018 23:09:10 -0400</pubDate>
+      <pubDate>Sat, 04 Aug 2018 23:09:10 -0400</pubDate>
       
       <guid>http://osama.sakhi.es/post/fall2018_courses/</guid>
       <description>In Fall 2018, he will be taking the following courses:
- Quantum Mechanics Computer Vision Computational Data Analysis CSE Algorithms  </description>
+ Quantum Mechanics - CHEM 6495 Computer Vision - CS 6476 CSE Algorithms - CSE 6140  In Addition, I will be involved with the following:
+ SUMO Challenge with Zhile Ren and Frank Dellaert TEDxGeorgiaTech as a Speaker  </description>
     </item>
     
   </channel>

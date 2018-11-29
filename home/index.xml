@@ -19,8 +19,16 @@
       
       <guid>http://osama.sakhi.es/home/about/</guid>
       <description>Biography Osama Sakhi is currently a Master&amp;rsquo;s student at Georgia Tech studying Computational Science &amp;amp; Engineering. He previously graduated from Georgia Tech in Spring 2017 with a Bachelor&amp;rsquo;s Degree in Computer Science.
-Alongside being a Master&amp;rsquo;s student, Osama now also runs an indepedent tutoring service. More information can be found here.
-Recently, he&amp;rsquo;s become interested in educational outreach programs. In Summer 2018, he became an Instructor for two courses offered by Duke TIP.</description>
+Recently, he&amp;rsquo;s become interested in educational outreach programs. In Summer 2018, he became an Instructor for two courses offered by Duke TIP. Read more about his experiences here.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://osama.sakhi.es/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://osama.sakhi.es/home/projects/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -60,25 +68,6 @@ Recently, he&amp;rsquo;s become interested in educational outreach programs. In 
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>http://osama.sakhi.es/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>http://osama.sakhi.es/home/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutoring Services</title>
-      <link>http://osama.sakhi.es/home/tutoring/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>http://osama.sakhi.es/home/tutoring/</guid>
-      <description>In-person tutoring services are offered in the Metro Atlanta area for the following topics:
- Fundamentals of Programming Web Development Artificial Intelligence  Contact Osama via email to find out more.</description>
-    </item>
-    
-    <item>
       <title>Tags</title>
       <link>http://osama.sakhi.es/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
@@ -93,6 +82,15 @@ Recently, he&amp;rsquo;s become interested in educational outreach programs. In 
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       
       <guid>http://osama.sakhi.es/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://osama.sakhi.es/home/tutoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://osama.sakhi.es/home/tutoring/</guid>
       <description></description>
     </item>
     
