@@ -6,7 +6,7 @@
     <url>
     
       <loc>http://sakhi.es/post/ted/</loc>
-      <lastmod>2018-11-29T13:10:19-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
     </url>
     
   
@@ -42,7 +42,7 @@
     <url>
     
       <loc>http://sakhi.es/post/teaching/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
     </url>
     
   
@@ -87,7 +87,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/artificial-intelligence/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -116,7 +116,7 @@
     <url>
     
       <loc>http://sakhi.es/categories/communication/</loc>
-      <lastmod>2018-11-29T13:10:19-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -135,7 +135,7 @@
     
     <url>
     
-      <loc>http://sakhi.es/categories/grad-school/</loc>
+      <loc>http://sakhi.es/tags/grad-school/</loc>
       <lastmod>2018-11-29T15:33:06-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -145,7 +145,7 @@
     
     <url>
     
-      <loc>http://sakhi.es/tags/grad-school/</loc>
+      <loc>http://sakhi.es/categories/grad-school/</loc>
       <lastmod>2018-11-29T15:33:06-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -166,7 +166,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/machine-learning/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -176,7 +176,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/nlp/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -225,7 +225,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/speaking/</loc>
-      <lastmod>2018-11-29T13:10:19-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -235,7 +235,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/tedx/</loc>
-      <lastmod>2018-11-29T13:10:19-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -245,17 +245,7 @@
     <url>
     
       <loc>http://sakhi.es/tags/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/categories/teaching/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -265,7 +255,17 @@
     <url>
     
       <loc>http://sakhi.es/tags/teaching/</loc>
-      <lastmod>2018-11-29T15:33:06-05:00</lastmod>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/categories/teaching/</loc>
+      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
       <priority>0</priority>
     </url>
     

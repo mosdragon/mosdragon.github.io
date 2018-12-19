@@ -92,7 +92,7 @@
 
 &lt;p&gt;The first class, I was a temp hire &amp;ndash; I was only there for the final week, since the previous instructor for the course was unable to teach that final week of the program. So, I was responsible for making sure these 18 students understood Python well enough that in just 5 days, I could teach them the basics of Web Development, and by the end of the week, each student would have used the &lt;a href=&#34;http://flask.pocoo.org&#34; target=&#34;_blank&#34;&gt;Flask&lt;/a&gt; framework to make a really simple Twitter clone. Despite my limited time with the students, this was an overwhelming success.&lt;/p&gt;
 
-&lt;p&gt;The true hero was my Teaching Assistant, Noah Spiner, who held the class together all three weeks and made my transition into the classroom with these new kids a smooth one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The true hero was my Teaching Assistant, Noah Spiner&lt;/strong&gt;, who held the class together all three weeks and made my transition into the classroom with these new kids a smooth one.&lt;/p&gt;
 
 &lt;p&gt;Just 7 days after my arrival there, it was time to say goodbye. I had parent-teacher conferences with each of my students&amp;rsquo; parents. It was a wonderful experience &amp;ndash; my students genuinely felt that I&amp;rsquo;d impacted them in that short 1-week we were here together, and parents loved how I&amp;rsquo;d manaded to inspire their kids.&lt;/p&gt;
 
@@ -103,6 +103,27 @@
 &lt;p&gt;You can see my syllabus &lt;a href=&#34;http://sakhi.es/files/syllabus.pdf&#34;&gt;here&lt;/a&gt;. It offered a mix of the serious topics (Fundamentals of Python, Graph Search, Machine Learning, Natural Language Processing) and fun games and activities the class really enjoyed (Bot or Not?, Jeopardy Review sessions, AI Rap Battle, Robotics Lab Field Trip).&lt;/p&gt;
 
 &lt;p&gt;Three whole weeks somehow flew by, and I could see from the looks on my students&amp;rsquo; faces that they felt the impact of my teaching. This was worth it all. This was worth the additional 2-3 hours I&amp;rsquo;d spend nightly preparing material for the next day, this was worth having to overcome my fear of standing in front of crowds, and this was definitely worth forgoing the additional month of full-time work experience I could&amp;rsquo;ve had instead.&lt;/p&gt;
+
+&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;Here are some links to resources I wrote / used for the AI course.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://sakhi.es/files/syllabus.pdf&#34;&gt;Syllabus for AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml&#34; target=&#34;_blank&#34;&gt;Repository for AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/machine_learning_walkthrough.ipynb&#34; target=&#34;_blank&#34;&gt;Machine Learning Experiment Walkthrough&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/cross_validation_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Cross-Validation Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/naive_bayes.ipynb&#34; target=&#34;_blank&#34;&gt;Naive Bayes by Hand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/neural_networks_by_hand.ipynb&#34; target=&#34;_blank&#34;&gt;Neural Networks by Hand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/amazon_reviews_classification.ipynb&#34; target=&#34;_blank&#34;&gt;Sentiment Analysis of Amazon Reviews&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/regression_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Regression Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h3&gt;
+
+&lt;p&gt;Many of these assignments I created by following through tutorials available from others and adapting them to what my class was able to handle. At the moment, I don&amp;rsquo;t have links to all those that helped, but I will try to add them when I get a chance to go back through my notes from the summer.&lt;/p&gt;
+
+&lt;p&gt;I also could not have had such a phenomenal experience without the help of my &lt;strong&gt;Teaching Assistant for AI, Julian Wright&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
