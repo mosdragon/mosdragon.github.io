@@ -18,7 +18,8 @@
       <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
       
       <guid>http://sakhi.es/project/hpc/</guid>
-      <description>In Fall 2016, I joined Oded Green to work on Computing Betweenness Centrality on dynamically changing graphs, also known as Streaming Graphs.</description>
+      <description>Background: Graph Theory was among my favorite topics during my Undergraduate Algorithms course, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: Devices).
+I joined Dr. Oded Green that term, and we began work immediately on Streaming Graphs (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.</description>
     </item>
     
   </channel>

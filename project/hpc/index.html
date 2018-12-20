@@ -17,7 +17,8 @@
       
     
   
-  <meta name="description" content="In Fall 2016, I joined Oded Green to work on Computing Betweenness Centrality on dynamically changing graphs, also known as Streaming Graphs.">
+  <meta name="description" content="Background: Graph Theory was among my favorite topics during my Undergraduate Algorithms course, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: Devices).
+I joined Dr. Oded Green that term, and we began work immediately on Streaming Graphs (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.">
 
   
   <link rel="alternate" hreflang="en-us" href="http://sakhi.es/project/hpc/">
@@ -103,7 +104,8 @@
   <meta property="og:site_name" content="Osama Sakhi">
   <meta property="og:url" content="http://sakhi.es/project/hpc/">
   <meta property="og:title" content="Betweenness Centrality for Streaming Graphs | Osama Sakhi">
-  <meta property="og:description" content="In Fall 2016, I joined Oded Green to work on Computing Betweenness Centrality on dynamically changing graphs, also known as Streaming Graphs."><meta property="og:image" content="http://sakhi.es/img/hpc.png">
+  <meta property="og:description" content="Background: Graph Theory was among my favorite topics during my Undergraduate Algorithms course, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: Devices).
+I joined Dr. Oded Green that term, and we began work immediately on Streaming Graphs (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time."><meta property="og:image" content="http://sakhi.es/img/bc.svg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-10-29T10:00:00&#43;00:00">
@@ -281,7 +283,7 @@
 <div class="article-header">
   
   
-    <img src="/img/hpc.png" class="article-banner" itemprop="image">
+    <img src="/img/bc.svg" class="article-banner" itemprop="image">
   
 
   <span class="article-header-caption">Betweeness Centrality on Streaming Graphs</span>
@@ -342,7 +344,55 @@
     
 
     <div class="article-style" itemprop="articleBody">
-      <p>In Fall 2016, I joined <a href="https://www.cc.gatech.edu/~ogreen/" target="_blank">Oded Green</a> to work on Computing Betweenness Centrality on dynamically changing graphs, also known as Streaming Graphs.</p>
+      
+
+<h3 id="background">Background:</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Graph_theory" target="_blank">Graph Theory</a> was among my favorite topics during my Undergraduate Algorithms course, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: <em>Devices</em>).</p>
+
+<p>I joined <a href="https://www.cc.gatech.edu/~ogreen/" target="_blank">Dr. Oded Green</a> that term, and we began work immediately on <a href="https://en.wikipedia.org/wiki/Dynamic_connectivity" target="_blank">Streaming Graphs</a> (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.</p>
+
+<h3 id="problem-betweenness-centrality-on-streaming-graphs">Problem: Betweenness Centrality on Streaming Graphs</h3>
+
+<p><a href="https://en.wikipedia.org/wiki/Betweenness_centrality" target="_blank">Betweenness Centrality</a>(BC) is a measure of a node&rsquo;s centrality in a graph based on it&rsquo;s presence in shortest paths.</p>
+
+<p>Think of it as the <em>hub</em> that connects many different transportation lines. The more dependent other transportation lines are on a given <em>hub</em>, the more central that <em>hub</em> is to the network.</p>
+
+<p>On a static graph, we can compute the BC values for each node pretty easily (in terms of time complexity). However, real-world graphs like Facebook&rsquo;s Social Network Graph contain hundreds of millions of nodes and billions of edges. If we wanted up-to-date BC values for graphs of this scale, re-computing BC each time a node/edge is <em>inserted</em> or <em>delete</em> becomes infeasible.</p>
+
+<p>So that&rsquo;s our task: Given a graph and then a sequence of insertions/deletions, can we accurately compute the BC values without recomputing on the entire graph?</p>
+
+<h3 id="approach">Approach:</h3>
+
+<p>We created a framework called <a href="https://github.com/cuStinger/cuStinger" target="_blank">cuStinger</a> (a <em>portmanteau</em> of <em>Cuda</em> and <em>Stinger</em>), which served as the backbone of our adventure in getting Streaming BC going.</p>
+
+<p>Using this framework (which saved us largely from writing repetitive Cuda code), we implemented the algorithm as described <a href="https://scholar.google.com/citations?user=C_7l2roAAAAJ&amp;hl=en#d=gs_md_cita-d&amp;p=&amp;u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DC_7l2roAAAAJ%26citation_for_view%3DC_7l2roAAAAJ%3A9yKSN-GCB0IC%26tzom%3D300" target="_blank">here</a>.</p>
+
+<h3 id="challenges">Challenges:</h3>
+
+<p>Since we were using Nvidia GPUs and Cuda under the hood, we had various challenges with race conditions, mutex locks, and validating results.</p>
+
+<h3 id="results">Results:</h3>
+
+<p>By the end of that year, we managed to have a running version that handled <em>most</em> edge cases of streaming graphs. There were some we hadn&rsquo;t implemented yet when I left the lab.</p>
+
+<p>A few weeks later, the lab moved onto a new framework (developed in-house with Oded and his lab), <a href="https://github.com/hornet-gt/hornet" target="_blank">Hornet</a>.</p>
+
+<h3 id="lessons-learned">Lessons Learned</h3>
+
+<ul>
+<li>Parallel Computation comes with some challenges, be ready</li>
+<li>Advances in GPU programming are opening doors to many new areas ripe for exploration</li>
+<li>ALWAYS write tests to validate results (we compared our Streaming BC results to our Static BC at each insertion/deletion)</li>
+</ul>
+
+<h3 id="tools-used">Tools Used</h3>
+
+<ul>
+<li>C/C++</li>
+<li>Cuda</li>
+<li>cuStinger framework</li>
+</ul>
 
     </div>
 
