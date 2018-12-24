@@ -18,7 +18,9 @@
       <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
       
       <guid>http://sakhi.es/project/sumo/</guid>
-      <description>In Fall 2018, I joined Zhile Ren and Frank Dellaert on the SUMO Challenge by Facebook.</description>
+      <description>Background In Fall 2018, I joined Zhile Ren on the SUMO Challenge by Facebook.
+The SUMO Challenge has several tracks for which we can compete for the best results, so our team decided to compete for the 3D Bounding Box track. That is, given 360 Degree RGB-Depth images, can we determine the 3D oriented bounding box for each of the items in the given scene?
+There are over 100 included object categories, with a pretty skewed distribution: Approaches At first, Zhile and I were determined to use direct 3D detection approaches like using Clouds of Oriented Gradients (CoG).</description>
     </item>
     
     <item>
