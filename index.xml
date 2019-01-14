@@ -53,14 +53,29 @@
 
 &lt;ol&gt;
 &lt;li&gt;Project 3D bounding boxes into 2D space to generate a 2D dataset&lt;/li&gt;
-&lt;li&gt;Train a Faster-R-CNN network to detect objects on the 2D dataset
-3/ Project the 2D coordinates back into 3D, do some simple post-processing to prevent things like walls and floors from being in the bounding box&lt;/li&gt;
-&lt;li&gt;Train Regressors to help correct the coordinates on a per-category basis.&lt;/li&gt;
+&lt;li&gt;Train a Faster-R-CNN network to detect objects on the 2D dataset&lt;/li&gt;
+&lt;li&gt;Project the 2D coordinates back into 3D, do some simple post-processing to prevent things like walls and floors from being in the bounding box&lt;/li&gt;
+&lt;li&gt;Train Regressors to help correct the coordinates on a per-category basis&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
 
-&lt;p&gt;On December 18th, we found out that the SUMO challege deadline would be pushed back to mid-January, so we&amp;rsquo;re continuing work on steps &lt;code&gt;(3)&lt;/code&gt; and &lt;code&gt;(4)&lt;/code&gt; and will be publishing results here after the holidays in early January.&lt;/p&gt;
+&lt;p&gt;On December 18th, we found out that the SUMO challege deadline would be pushed back to January 14th. We continue work on steps &lt;code&gt;(3)&lt;/code&gt; and &lt;code&gt;(4)&lt;/code&gt; but didn&amp;rsquo;t get very far in attempting &lt;code&gt;(4)&lt;/code&gt;. We made our submission on Sunday, January 13th, and are currently awaiting official results.&lt;/p&gt;
+
+&lt;h3 id=&#34;visual-results-in-3d&#34;&gt;Visual Results in 3D&lt;/h3&gt;
+
+&lt;p&gt;Below are our results in the 3D space. On the left, we have a red bounding box, which is our detection. On the right in green we have the ground truth bounding boxes for that same scene.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sakhi.es/img/sumo/sumo_tv.png&#34; alt=&#34;Detection of a television  with books in the tv stand&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 1:&lt;/strong&gt; Detection of a &lt;code&gt;television&lt;/code&gt;  with &lt;code&gt;books&lt;/code&gt; in the tv stand. &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sakhi.es/img/sumo/sumo_shower.png&#34; alt=&#34;Detection of a shower&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 2:&lt;/strong&gt; Detection of a &lt;code&gt;shower&lt;/code&gt;. &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://sakhi.es/img/sumo/sumo_door.png&#34; alt=&#34;Detection of a door&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 3:&lt;/strong&gt; Detection of a &lt;code&gt;door&lt;/code&gt;. &lt;/center&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;visual-results-in-2d&#34;&gt;Visual Results in 2D&lt;/h3&gt;
 
 &lt;p&gt;Below are some visual results we&amp;rsquo;ve gotten in the 2D space training the Faster-R-CNN network.&lt;/p&gt;
 
@@ -71,8 +86,6 @@
 &lt;img src=&#34;http://sakhi.es/img/sumo/five.jpg&#34; alt=&#34;Scene 5&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As you can see, the network performs fairly well. Mean AP was about &lt;code&gt;23%&lt;/code&gt; which is reasonable given the enormous dataset size and the skewed distribution. One aspect that particularly complicates this challenge are the walls and floors, which are object categories, but the coordinates are often outside of single-frame views, which is exactly what this network was trained to perform on.&lt;/p&gt;
-
-&lt;p&gt;More detailed results and statistics to come soon&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
