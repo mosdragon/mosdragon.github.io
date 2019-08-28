@@ -1,12 +1,92 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     
     <url>
     
+      <loc>http://sakhi.es/categories/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/categories/communication/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/speaking/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://sakhi.es/post/ted/</loc>
-      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/tedx/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/computer-vision/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/machine-learning/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/categories/research/</loc>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
     </url>
     
   
@@ -15,7 +95,7 @@
     <url>
     
       <loc>http://sakhi.es/project/sumo/</loc>
-      <lastmod>2019-01-14T10:40:21-05:00</lastmod>
+      <lastmod>2019-02-21T17:42:26-05:00</lastmod>
     </url>
     
   
@@ -32,7 +112,52 @@
     
     <url>
     
+      <loc>http://sakhi.es/tags/high-performance-computing/</loc>
+      <lastmod>2018-12-19T19:48:54-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/artificial-intelligence/</loc>
+      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://sakhi.es/post/teaching/</loc>
+      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/nlp/</loc>
+      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/tags/teaching/</loc>
+      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://sakhi.es/categories/teaching/</loc>
       <lastmod>2018-12-19T18:56:07-05:00</lastmod>
     </url>
     
@@ -77,147 +202,7 @@
     
     <url>
     
-      <loc>http://sakhi.es/tags/artificial-intelligence/</loc>
-      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/categories/communication/</loc>
-      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/computer-vision/</loc>
-      <lastmod>2019-01-14T10:40:21-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/high-performance-computing/</loc>
-      <lastmod>2018-12-19T19:48:54-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/machine-learning/</loc>
-      <lastmod>2019-01-14T10:40:21-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/nlp/</loc>
-      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/</loc>
-      <lastmod>2018-12-19T19:09:30-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://sakhi.es/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/categories/research/</loc>
-      <lastmod>2019-01-14T10:40:21-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/speaking/</loc>
-      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/tedx/</loc>
-      <lastmod>2018-12-19T18:45:53-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/</loc>
-      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/categories/teaching/</loc>
-      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://sakhi.es/tags/teaching/</loc>
-      <lastmod>2018-12-19T18:56:07-05:00</lastmod>
-      <priority>0</priority>
     </url>
     
   

@@ -7,55 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Osama Sakhi &amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 31 Jul 2018 23:09:17 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 10:10:00 +0000</lastBuildDate>
     
 	<atom:link href="http://sakhi.es/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Artificial Intelligence</title>
-      <link>http://sakhi.es/tags/artificial-intelligence/</link>
-      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
-      
-      <guid>http://sakhi.es/tags/artificial-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer Vision</title>
-      <link>http://sakhi.es/tags/computer-vision/</link>
-      <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
-      
-      <guid>http://sakhi.es/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>High Performance Computing</title>
-      <link>http://sakhi.es/tags/high-performance-computing/</link>
-      <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
-      
-      <guid>http://sakhi.es/tags/high-performance-computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>http://sakhi.es/tags/machine-learning/</link>
-      <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
-      
-      <guid>http://sakhi.es/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>NLP</title>
-      <link>http://sakhi.es/tags/nlp/</link>
-      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
-      
-      <guid>http://sakhi.es/tags/nlp/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Speaking</title>
@@ -72,6 +27,51 @@
       <pubDate>Thu, 29 Nov 2018 10:10:00 +0000</pubDate>
       
       <guid>http://sakhi.es/tags/tedx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>http://sakhi.es/tags/computer-vision/</link>
+      <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
+      
+      <guid>http://sakhi.es/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://sakhi.es/tags/machine-learning/</link>
+      <pubDate>Thu, 29 Nov 2018 10:00:00 +0000</pubDate>
+      
+      <guid>http://sakhi.es/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High Performance Computing</title>
+      <link>http://sakhi.es/tags/high-performance-computing/</link>
+      <pubDate>Mon, 29 Oct 2018 10:00:00 +0000</pubDate>
+      
+      <guid>http://sakhi.es/tags/high-performance-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>http://sakhi.es/tags/artificial-intelligence/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://sakhi.es/tags/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NLP</title>
+      <link>http://sakhi.es/tags/nlp/</link>
+      <pubDate>Tue, 31 Jul 2018 23:09:17 -0400</pubDate>
+      
+      <guid>http://sakhi.es/tags/nlp/</guid>
       <description></description>
     </item>
     
