@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Osama Sakhi</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>Speaking at TEDxGeorgiaTech&#39;s Fall 2018 Speaker Salon</title>
+      <link>/post/ted/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/post/ted/</guid>
+      <description>&lt;p&gt;In Fall 2018, I decided to apply to be a speaker for &lt;a href=&#34;https://www.tedxgeorgiatech.com&#34;&gt;TEDxGeorgiaTech&lt;/a&gt;&#39;s Fall speaker salon. I was chosen as one of the 6 speakers among 70 applicants.&lt;/p&gt;
+
+&lt;p&gt;For the 6 weeks that followed, I rewrote my speech several times over. I changed it drastically from what it started off as, added entirely new ideas, and overall realized that the focus of the talk had to be not my experience, but rather what others should take from it.&lt;/p&gt;
+
+&lt;p&gt;Finally, on November 4th, 2018, my hard work paid off. I was the final speaker for the night, so I ended the show. My talk, &lt;em&gt;Compounding Interest: How Instilling Drive Goes a Long Way&lt;/em&gt; tried to strike a delicate balance between being informative and being relatable. My focus was on the importance of instilling drive and the cascading effect that it had on educating society.&lt;/p&gt;
+
+&lt;p&gt;You can find my full talk &lt;a href=&#34;https://www.youtube.com/watch?v=0FWfsGd0GWc&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Additionally, I found out in February, 2019 that I was chosen among the 6 speakers from last Fall to speak again at the TedXGeorgiaTech Conference held on April 13th, 2019. I&#39;m was ecstatic about the chance to revise my talk and give it one more time in front of an even larger crowd!&lt;/p&gt;
+
+&lt;p&gt;The revised talk was posted &lt;a href=&#34;https://youtu.be/pH9I2ZnH08Y&#34;&gt;here&lt;/a&gt; in late July.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

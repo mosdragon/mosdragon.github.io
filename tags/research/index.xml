@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>research | Osama Sakhi</title>
+    <link>/tags/research/</link>
+      <atom:link href="/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <description>research</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>research</title>
+      <link>/tags/research/</link>
+    </image>
+    
+    <item>
+      <title>SUMO Challenge</title>
+      <link>/project/sumo/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/project/sumo/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;In Fall 2018, I joined &lt;a href=&#34;http://cs.brown.edu/people/zr1/&#34; target=&#34;_blank&#34;&gt;Zhile Ren&lt;/a&gt; and &lt;a href=&#34;(https://www.cc.gatech.edu/~dellaert/FrankDellaert/Frank_Dellaert/Frank_Dellaert.html)&#34; target=&#34;_blank&#34;&gt;Frank Dellaert&lt;/a&gt; on the &lt;a href=&#34;https://sumochallenge.org&#34; target=&#34;_blank&#34;&gt;SUMO Challenge&lt;/a&gt; by Facebook.&lt;/p&gt;
+
+&lt;p&gt;The SUMO Challenge has several tracks for which we can compete for the best results, so our team decided to compete for the 3D Bounding Box track. That is, given 360 Degree RGB-Depth images, can we determine the 3D oriented bounding box for each of the items in the given scene?&lt;/p&gt;
+
+&lt;p&gt;There are over 100 included object categories, with a pretty skewed distribution:
+&lt;img src=&#34;/img/category_stats.png&#34; alt=&#34;Sumo Categories&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;approaches&#34;&gt;Approaches&lt;/h2&gt;
+
+&lt;p&gt;At first, Zhile and I were determined to use direct 3D detection approaches like using &lt;a href=&#34;http://cs.brown.edu/people/zr1/publications/cvpr2016/cvpr2016.pdf&#34; target=&#34;_blank&#34;&gt;Clouds of Oriented Gradients (CoG)&lt;/a&gt;. However, the enormous size of the dataset (1+ Terrabyte) and image sizes (&lt;code&gt;1024 x 6144 x 3 channels&lt;/code&gt;) immediately became problematic, both for training and inference.&lt;/p&gt;
+
+&lt;p&gt;CoGs are great when the shape of the categories are easy to discern (i.e shapes that are not predominantly &amp;ldquo;box-like&amp;rdquo;), but in SUMO, we had many items that would have taken on very similar CoGs such as &lt;code&gt;single_bed&lt;/code&gt; versus &lt;code&gt;double_bed&lt;/code&gt;, &lt;code&gt;tv_stand&lt;/code&gt; versus &lt;code&gt;dresser&lt;/code&gt;, and so on.&lt;/p&gt;
+
+&lt;p&gt;We decided a good starting point would be to determine object locations in the 2D space, and see where we could go from there. We intended to then train for CoGs, but we had limited time with the SUMO challenge deadline being mid-December, so we decided to see how well we could perform by using the following pipeline:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Project 3D bounding boxes into 2D space to generate a 2D dataset&lt;/li&gt;
+&lt;li&gt;Train a Faster-R-CNN network to detect objects on the 2D dataset&lt;/li&gt;
+&lt;li&gt;Project the 2D coordinates back into 3D, do some simple post-processing to prevent things like walls and floors from being in the bounding box&lt;/li&gt;
+&lt;li&gt;Train Regressors to help correct the coordinates on a per-category basis&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;On December 18th, we found out that the SUMO challege deadline would be pushed back to January 14th. We continued work on step &lt;code&gt;(3)&lt;/code&gt; but didn&amp;rsquo;t get very far in step &lt;code&gt;(4)&lt;/code&gt;, so our final pipeline consists of steps &lt;code&gt;(1)&lt;/code&gt; through &lt;code&gt;(3)&lt;/code&gt;. We made our submission on Sunday, January 13th.&lt;/p&gt;
+
+&lt;p&gt;We found out that we were narrowly beat by the Princeton Vision Lab for 1st place, leaving us in 2nd place for our cateogry.&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-results-in-3d&#34;&gt;Visual Results in 3D&lt;/h2&gt;
+
+&lt;p&gt;Below are our results in the 3D space. On the left, we have a red bounding box, which is our detection. On the right in green we have the ground truth bounding boxes for that same scene.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/sumo/sumo_tv.png&#34; alt=&#34;Detection of a television  with books in the tv stand&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 1:&lt;/strong&gt; Detection of a &lt;code&gt;television&lt;/code&gt;  with &lt;code&gt;books&lt;/code&gt; in the tv stand. &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/sumo/sumo_shower.png&#34; alt=&#34;Detection of a shower&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 2:&lt;/strong&gt; Detection of a &lt;code&gt;shower&lt;/code&gt;. &lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/sumo/sumo_door.png&#34; alt=&#34;Detection of a door&#34; /&gt;
+&lt;center&gt; &lt;strong&gt;Figure 3:&lt;/strong&gt; Detection of a &lt;code&gt;door&lt;/code&gt;. &lt;/center&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;visual-results-in-2d&#34;&gt;Visual Results in 2D&lt;/h2&gt;
+
+&lt;p&gt;Below are some visual results we&amp;rsquo;ve gotten in the 2D space training the Faster-R-CNN network.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/img/sumo/one.jpg&#34; alt=&#34;Scene 1&#34; /&gt;
+&lt;img src=&#34;/img/sumo/two.jpg&#34; alt=&#34;Scene 2&#34; /&gt;
+&lt;img src=&#34;/img/sumo/three.jpg&#34; alt=&#34;Scene 3&#34; /&gt;
+&lt;img src=&#34;/img/sumo/four.jpg&#34; alt=&#34;Scene 4&#34; /&gt;
+&lt;img src=&#34;/img/sumo/five.jpg&#34; alt=&#34;Scene 5&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the network performs fairly well. Mean AP was about &lt;code&gt;23%&lt;/code&gt; which is reasonable given the enormous dataset size and the skewed distribution. One aspect that particularly complicates this challenge are the walls and floors, which are object categories, but the coordinates are often outside of single-frame views, which is exactly what this network was trained to perform on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Betweenness Centrality for Streaming Graphs</title>
+      <link>/project/hpc/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/project/hpc/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_theory&#34; target=&#34;_blank&#34;&gt;Graph Theory&lt;/a&gt; was among my favorite topics during my undergraduate studies, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: &lt;em&gt;Devices&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;I joined &lt;a href=&#34;https://www.cc.gatech.edu/~ogreen/&#34; target=&#34;_blank&#34;&gt;Dr. Oded Green&lt;/a&gt; that term, and we began work immediately on &lt;a href=&#34;https://en.wikipedia.org/wiki/Dynamic_connectivity&#34; target=&#34;_blank&#34;&gt;Streaming Graphs&lt;/a&gt; (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.&lt;/p&gt;
+
+&lt;h2 id=&#34;problem-betweenness-centrality-on-streaming-graphs&#34;&gt;Problem: Betweenness Centrality on Streaming Graphs&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Betweenness_centrality&#34; target=&#34;_blank&#34;&gt;Betweenness Centrality&lt;/a&gt;(BC) is a measure of a node&amp;rsquo;s centrality in a graph based on it&amp;rsquo;s presence in shortest paths.&lt;/p&gt;
+
+&lt;p&gt;Think of it as the &lt;em&gt;hub&lt;/em&gt; that connects many different transportation lines. The more dependent other transportation lines are on a given &lt;em&gt;hub&lt;/em&gt;, the more central that &lt;em&gt;hub&lt;/em&gt; is to the network.&lt;/p&gt;
+
+&lt;p&gt;On a static graph, we can compute the BC values for each node pretty easily (in terms of time complexity). However, real-world graphs like Facebook&amp;rsquo;s Social Network Graph contain hundreds of millions of nodes and billions of edges. If we wanted up-to-date BC values for graphs of this scale, re-computing BC each time a node/edge is &lt;em&gt;inserted&lt;/em&gt; or &lt;em&gt;delete&lt;/em&gt; becomes infeasible.&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s our task: Given a graph and then a sequence of insertions/deletions, can we accurately compute the BC values without recomputing on the entire graph?&lt;/p&gt;
+
+&lt;h2 id=&#34;approach&#34;&gt;Approach:&lt;/h2&gt;
+
+&lt;p&gt;We created a framework called &lt;a href=&#34;https://github.com/cuStinger/cuStinger&#34; target=&#34;_blank&#34;&gt;cuStinger&lt;/a&gt; (a &lt;em&gt;portmanteau&lt;/em&gt; of &lt;em&gt;Cuda&lt;/em&gt; and &lt;em&gt;Stinger&lt;/em&gt;), which served as the backbone of our adventure in getting Streaming BC going.&lt;/p&gt;
+
+&lt;p&gt;Using this framework (which saved us largely from writing repetitive Cuda code), we implemented the algorithm as described &lt;a href=&#34;https://scholar.google.com/citations?user=C_7l2roAAAAJ&amp;amp;hl=en#d=gs_md_cita-d&amp;amp;p=&amp;amp;u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DC_7l2roAAAAJ%26citation_for_view%3DC_7l2roAAAAJ%3A9yKSN-GCB0IC%26tzom%3D300&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;challenges&#34;&gt;Challenges:&lt;/h2&gt;
+
+&lt;p&gt;Since we were using Nvidia GPUs and Cuda under the hood, we had various challenges with race conditions, mutex locks, and validating results.&lt;/p&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results:&lt;/h2&gt;
+
+&lt;p&gt;By the end of that year, we managed to have a running version that handled &lt;em&gt;most&lt;/em&gt; edge cases of streaming graphs. There were some we hadn&amp;rsquo;t implemented yet when I left the lab.&lt;/p&gt;
+
+&lt;p&gt;A few weeks later, the lab moved onto a new framework (developed in-house with Oded and his lab), &lt;a href=&#34;https://github.com/hornet-gt/hornet&#34; target=&#34;_blank&#34;&gt;Hornet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parallel Computation comes with some challenges, be ready&lt;/li&gt;
+&lt;li&gt;Advances in GPU programming are opening doors to many new areas ripe for exploration&lt;/li&gt;
+&lt;li&gt;ALWAYS write tests to validate results (we compared our Streaming BC results to our Static BC at each insertion/deletion)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;tools-used&#34;&gt;Tools Used&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;C/C++&lt;/li&gt;
+&lt;li&gt;Cuda&lt;/li&gt;
+&lt;li&gt;cuStinger framework&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sumo</title>
+      <link>/publication/sumo/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/sumo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
