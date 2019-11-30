@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,26 +13,42 @@
     </image>
     
     <item>
-      <title>computer vision</title>
-      <link>/tags/computer-vision/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/computer-vision/</guid>
+      <title>machine learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>machine learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
+      <title>natural language processing</title>
+      <link>/tags/natural-language-processing/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>research</title>
       <link>/tags/research/</link>
-      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social computing</title>
+      <link>/tags/social-computing/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/social-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer vision</title>
+      <link>/tags/computer-vision/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/computer-vision/</guid>
       <description></description>
     </item>
     

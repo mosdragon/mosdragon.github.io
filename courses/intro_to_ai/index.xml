@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Artificial Intelligence | Osama Sakhi</title>
+    <link>/courses/intro_to_ai/</link>
+      <atom:link href="/courses/intro_to_ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Introduction to Artificial Intelligence</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Introduction to Artificial Intelligence</title>
+      <link>/courses/intro_to_ai/</link>
+    </image>
+    
+  </channel>
+</rss>
