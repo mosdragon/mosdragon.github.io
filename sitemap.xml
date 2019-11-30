@@ -28,8 +28,38 @@
   </url>
   
   <url>
+    <loc>/tags/computer-vision/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/crossdom/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/research/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,27 +68,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/research/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/social-computing/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-11-29T14:56:54-05:00</lastmod>
   </url>
   
@@ -70,11 +80,6 @@
   <url>
     <loc>/talk/gans/</loc>
     <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/computer-vision/</loc>
-    <lastmod>2019-09-03T01:09:32-04:00</lastmod>
   </url>
   
   <url>
