@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Duke TIP AI 2018 | Osama Sakhi</title>
+    <link>/teaching/tip/</link>
+      <atom:link href="/teaching/tip/index.xml" rel="self" type="application/rss+xml" />
+    <description>Duke TIP AI 2018</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Duke TIP AI 2018</title>
+      <link>/teaching/tip/</link>
+    </image>
+    
+    <item>
+      <title>Pathfinding</title>
+      <link>/teaching/tip/pathfinding/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
+      <guid>/teaching/tip/pathfinding/</guid>
+      <description>
+
+&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
+
+&lt;p&gt;Here are links to the projects I used for my students during the Pathfinding portion of the course:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://ai.berkeley.edu/search.html&#34; target=&#34;_blank&#34;&gt;Pacman Search Project&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/teaching/tip/ml/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
+      <guid>/teaching/tip/ml/</guid>
+      <description>
+
+&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
+
+&lt;p&gt;Here are links to the repos/projects I created or used for my students during the Machine Learning portion of the course:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml&#34; target=&#34;_blank&#34;&gt;Repository for AI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/machine_learning_walkthrough.ipynb&#34; target=&#34;_blank&#34;&gt;Machine Learning Experiment Walkthrough&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/cross_validation_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Cross-Validation Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/naive_bayes.ipynb&#34; target=&#34;_blank&#34;&gt;Naive Bayes by Hand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/neural_networks_by_hand.ipynb&#34; target=&#34;_blank&#34;&gt;Neural Networks by Hand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/regression_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Regression Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Natural Language Processing</title>
+      <link>/teaching/tip/nlp/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
+      <guid>/teaching/tip/nlp/</guid>
+      <description>
+
+&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
+
+&lt;p&gt;Here are links to the projects I created or used for my students during the Natural Language Processing portion of the course:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/amazon_reviews_classification.ipynb&#34; target=&#34;_blank&#34;&gt;Sentiment Analysis of Amazon Reviews&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

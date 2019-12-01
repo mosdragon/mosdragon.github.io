@@ -3,63 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/intro_to_ai/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
+    <loc>/teaching/intro_to_ai/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/tip/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
+    <loc>/teaching/tip/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/tip/pathfinding/</loc>
-    <lastmod>2019-09-02T23:32:14-04:00</lastmod>
+    <loc>/teaching/tip/pathfinding/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/tip/ml/</loc>
-    <lastmod>2019-09-02T23:32:14-04:00</lastmod>
+    <loc>/teaching/tip/ml/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/tip/nlp/</loc>
-    <lastmod>2019-09-02T23:32:14-04:00</lastmod>
+    <loc>/teaching/tip/nlp/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/computer-vision/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>/project/crossdom/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
     <loc>/project/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/research/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-11-30T12:00:00+00:00</lastmod>
+    <lastmod>2019-11-30T10:24:57-05:00</lastmod>
   </url>
   
   <url>
@@ -104,7 +104,7 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2019-11-08T14:01:33-05:00</lastmod>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
@@ -187,11 +187,6 @@
   </url>
   
   <url>
-    <loc>/courses/</loc>
-    <lastmod>2019-08-27T21:59:43-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
     <lastmod>2019-08-27T21:59:43-04:00</lastmod>
   </url>
@@ -204,6 +199,11 @@
   <url>
     <loc>/talk/</loc>
     <lastmod>2019-08-27T21:59:43-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+    <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
 </urlset>
