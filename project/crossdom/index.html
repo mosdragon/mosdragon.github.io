@@ -128,7 +128,7 @@
     
       <meta property="article:published_time" content="2019-11-30T12:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-11-30T10:24:57-05:00">
+    <meta property="article:modified_time" content="2019-12-26T10:22:47-05:00">
   
 
   
@@ -470,6 +470,8 @@
 
   
   
+    
+  
 
 
 <div class="article-container pt-3">
@@ -482,7 +484,7 @@
 
 
 <meta content="2019-11-30 12:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-11-30 10:24:57 -0500 EST" itemprop="dateModified">
+<meta content="2019-12-26 10:22:47 -0500 EST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -497,7 +499,7 @@
           Last updated on
       
     
-    <time>Nov 30, 2019</time>
+    <time>Dec 26, 2019</time>
   </span>
   
 
@@ -629,14 +631,8 @@
 
 
   
-    
-  
 
 
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/crossdom.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
@@ -658,6 +654,14 @@
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://youtu.be/jxWmfB7XU1c" target="_blank" rel="noopener">
+  Video
+</a>
+
 
 
 
@@ -668,10 +672,10 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 260px; max-height: 414px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 650px;">
   <div style="position: relative">
-    <img src="/project/crossdom/featured.png" alt="" class="featured-image">
-    <span class="article-header-caption">Cross Domain Context Prediction</span>
+    <img src="/project/crossdom/featured_hu38172323d783f1bb518b9a1242322976_580865_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <span class="article-header-caption">Cross-domain context prediction for sketch-based image retrieval</span>
   </div>
 </div>
 
@@ -684,19 +688,69 @@
 
 <h2 id="problem-statement">Problem Statement</h2>
 
-<p>TODO</p>
+<ul>
+<li>Given a hand-drawn sketch, retrieve the image instance that this sketch was drawn for
+<img src="probstatement.png" alt="" /></li>
+</ul>
 
 <h2 id="related-work">Related Work</h2>
 
-<p>TODO</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1505.05192" target="_blank">Unsupervised Visual Representation Learning by Context Prediction</a></li>
+<li><a href="http://sketchy.eye.gatech.edu/paper.pdf" target="_blank">The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231217314364#!" target="_blank">Cross-modal Subspace Learning for fine-grained sketch-based image retrieval</a></li>
+</ul>
 
-<h2 id="approaches">Approaches</h2>
+<h2 id="approach">Approach</h2>
+
+<h3 id="assumptions">Assumptions</h3>
+
+<ul>
+<li>Aligned, paired images available. For this, we compute canny edges of the images in the PASCAL VOC dataset.</li>
+<li>Clustering image and sketch embeddings from a well-trained network will result in well-formed discrete clusters that are domain agnostic.</li>
+<li>The model that performs well on cross domain context prediction will perform well on the cross-domain image retrieval task.</li>
+</ul>
+
+<h3 id="pre-text-task">Pre-text Task</h3>
+
+<ul>
+<li>We divide the image into 4 regions, with uneven spacing and jitter</li>
+<li>We then extract two patches, one from each domain, i.e. images from Pascal, and their Canny edges</li>
+<li>We finally compute the relative positioning of the patches using the context encoder</li>
+</ul>
+
+<p><img src="spatial.png" alt="Spatial relation between patches" />
+<img src="classification.png" alt="AlexNet-inspired classification architecture" /></p>
+
+<h3 id="image-retrieval">Image Retrieval</h3>
+
+<ul>
+<li>We first compute embeddings for the query sketch using AlexNet trained on the pretext</li>
+<li>We then perform a nearest neighbour search on the embeddings from the dataset of images</li>
+<li>We retrieve the nearest 5 and 10 images for top-5 and top-10 similarity scores</li>
+</ul>
+
+<p><img src="neighbors.png" alt="Computing embeddings and finding nearest neighbors" /></p>
+
+<h2 id="experiments">Experiments</h2>
 
 <p>TODO</p>
 
 <h2 id="results">Results</h2>
 
 <p>TODO</p>
+
+<h3 id="visual-results">Visual Results</h3>
+
+<p><img src="visual1.png" alt="Good Results" />
+- <strong>Across all classes</strong> → Top two images retrieved correctly fetch birds with the correct pose</p>
+
+<p><img src="visual2.png" alt="Bad Results" />
+- <strong>Across all classes</strong> → Even in incorrect retrievals across classes, the pose and shape seem to match the intended object</p>
+
+<h3 id="comparison-to-baselines">Comparison to Baselines</h3>
+
+<p><img src="results_table.png" alt="Results table. Our methodology beats out feature pyramids without any supervision." /></p>
 
     </div>
 
@@ -788,7 +842,7 @@
             
           
           <li>
-            <a itemprop="sameAs" href="/file/cv.pdf" >
+            <a itemprop="sameAs" href="/files/cv.pdf" >
               <i class="ai ai-cv"></i>
             </a>
           </li>

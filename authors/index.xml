@@ -17,11 +17,20 @@
       <link>/authors/admin/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;Osama Sakhi is currently a Master&amp;rsquo;s student at Georgia Tech studying Computational Science &amp;amp; Engineering. He previously graduated from Georgia Tech in Spring 2017 with a Bachelor&amp;rsquo;s Degree in Computer Science.&lt;/p&gt;
+      <description>&lt;p&gt;I recently complted my Master&amp;rsquo;s degree in &lt;em&gt;Computational Science &amp;amp; Engineering&lt;/em&gt; at the Georgia Institute of Technology. Previously, I&amp;rsquo;ve also completed a Bachelor&amp;rsquo;s degree in &lt;em&gt;Computer Science&lt;/em&gt; from Georgia Tech, with specializations in &lt;em&gt;Artificial Intelligence&lt;/em&gt; and &lt;em&gt;Devices&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;In Summer 2018, he became an Instructor for two courses offered by &lt;a href=&#34;https://tip.duke.edu/&#34; target=&#34;_blank&#34;&gt;Duke TIP&lt;/a&gt;. Read more about his experiences &lt;a href=&#34;/teaching/tip/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Over the years I&amp;rsquo;ve conducted research in multiple labs, served as a TA several times, and worked as a back-end software engineer. Here are some of my highlights:&lt;/p&gt;
 
-&lt;p&gt;Osama has done research in High Performance Computing, Computer Vision, and Social Computing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Head TA for Intro. to Artificial Intelligence @ GT - &lt;em&gt;Fall 2019&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Research with &lt;a href=&#34;https://socweb.cc.gatech.edu/&#34; target=&#34;_blank&#34;&gt;Social Dynamics and Wellbeing Lab&lt;/a&gt; &amp;ndash; &lt;em&gt;Summer 2019 - Present&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Computer Vision Intern &amp;ndash; &lt;em&gt;Summer 2019&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Research in 3D Object Detection &amp;ndash; &lt;em&gt;Fall 2018 - Spring 2019&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Software Engineer &amp;ndash; &lt;em&gt;Summer 2017 to Summer 2018&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Research in High Performance Computing &amp;ndash; &lt;em&gt;Fall 2016 - Spring 2017&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Instructor for Artificial Intelligence for DukeTIP &amp;ndash; &lt;em&gt;Summer 2018&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Delivered two TEDx talks on Mentorship &amp;ndash; &lt;em&gt;Fall 2018 - Spring 2019&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -42,10 +51,18 @@
     </item>
     
     <item>
-      <title>Ilke Demir4 Jimmy Wu</title>
-      <link>/authors/ilke-demir4-jimmy-wu/</link>
+      <title>Ilke Demir</title>
+      <link>/authors/ilke-demir/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/ilke-demir4-jimmy-wu/</guid>
+      <guid>/authors/ilke-demir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jimmy Wu</title>
+      <link>/authors/jimmy-wu/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jimmy-wu/</guid>
       <description></description>
     </item>
     
@@ -62,6 +79,14 @@
       <link>/authors/richard-skarbez/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/authors/richard-skarbez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shuran Song</title>
+      <link>/authors/shuran-song/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/shuran-song/</guid>
       <description></description>
     </item>
     
@@ -90,10 +115,10 @@
     </item>
     
     <item>
-      <title>Zhile Ren6 Shuran Song</title>
-      <link>/authors/zhile-ren6-shuran-song/</link>
+      <title>Zhile Ren</title>
+      <link>/authors/zhile-ren/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/zhile-ren6-shuran-song/</guid>
+      <guid>/authors/zhile-ren/</guid>
       <description></description>
     </item>
     
