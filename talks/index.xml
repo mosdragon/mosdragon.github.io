@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent Talks | Osama Sakhi</title>
+    <link>/talks/</link>
+      <atom:link href="/talks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent Talks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Recent Talks</title>
+      <link>/talks/</link>
+    </image>
+    
+    <item>
+      <title>Generative Adversarial Networks Discussion</title>
+      <link>/talks/gans/</link>
+      <pubDate>Thu, 28 Nov 2019 13:00:00 +0000</pubDate>
+      <guid>/talks/gans/</guid>
+      <description>
+
+&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+ --&gt;
+
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+
+&lt;p&gt;I was enrolled in a seminar course titled &lt;em&gt;Learning with Limited Supervision&lt;/em&gt; in &lt;em&gt;Fall 2019&lt;/em&gt;, and each class a group of students would lead a discussion on a chosen paper. For my discussion, I chose the &lt;em&gt;Generative Adversarial Networks&lt;/em&gt; by Ian Goodfellow.&lt;/p&gt;
+
+&lt;p&gt;I was tasked with not only presenting the methodology, but also debating the strengths of the paper against my colleague who presented the paper&amp;rsquo;s weaknesses.&lt;/p&gt;
+
+&lt;!-- - **Create** slides using Academic&#39;s [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
+- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
+- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://sourcethemes.com/academic/docs/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

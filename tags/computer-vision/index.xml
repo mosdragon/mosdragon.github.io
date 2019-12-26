@@ -65,25 +65,40 @@
 
 &lt;p&gt;&lt;img src=&#34;neighbors.png&#34; alt=&#34;Computing embeddings and finding nearest neighbors&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
-
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
 
 &lt;h3 id=&#34;visual-results&#34;&gt;Visual Results&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34; /&gt;
-- &lt;strong&gt;Across all classes&lt;/strong&gt; → Top two images retrieved correctly fetch birds with the correct pose&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34; /&gt;
-- &lt;strong&gt;Across all classes&lt;/strong&gt; → Even in incorrect retrievals across classes, the pose and shape seem to match the intended object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we can see that the correct instance image is present in the retrieved images&lt;/li&gt;
+&lt;li&gt;We can also see that the other bird result also captures similar pose as the sketch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we see that the correct instance wasn&amp;rsquo;t retrieved&lt;/li&gt;
+&lt;li&gt;Additionally, the correct class wasn&amp;rsquo;t retrieved either&lt;/li&gt;
+&lt;li&gt;Note how despite the incorrect class/instance retrieval, we do see similarities in the pose and shape between the sketches and the retrieved images&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;comparison-to-baselines&#34;&gt;Comparison to Baselines&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;results_table.png&#34; alt=&#34;Results table. Our methodology beats out feature pyramids without any supervision.&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Although our approach didn&amp;rsquo;t beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Study the effects of further training on pretext task&lt;/li&gt;
+&lt;li&gt;Use context-encoder as pretraining for supervised image retreival models&lt;/li&gt;
+&lt;li&gt;Use more sophisticated feature extractors (like GoogLeNet or VGG) that more recent Sketch-Based Image Retrieval methods use&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

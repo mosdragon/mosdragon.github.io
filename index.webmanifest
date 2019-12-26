@@ -2,8 +2,8 @@
   "name": "Osama Sakhi",
   "short_name": "Osama Sakhi",
   "lang": "en-us",
-  "theme_color": "#4caf50",
-  "background_color": "#4caf50",
+  "theme_color": "#003057",
+  "background_color": "#003057",
   "icons": [{
     "src": "img/icon-192.png",
     "sizes": "192x192",

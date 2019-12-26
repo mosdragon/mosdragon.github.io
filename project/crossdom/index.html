@@ -41,7 +41,7 @@
   
   
   
-  <meta name="theme-color" content="#4caf50">
+  <meta name="theme-color" content="#003057">
   
 
   
@@ -80,7 +80,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.ab256391e26eaad5a122d3843a5dbe21.css">
+  <link rel="stylesheet" href="/css/academic.min.80eb4c18c26ec2d0f69cfe4e4abb9a18.css">
 
   
 
@@ -128,7 +128,7 @@
     
       <meta property="article:published_time" content="2019-11-30T12:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-12-26T10:22:47-05:00">
+    <meta property="article:modified_time" content="2019-12-26T11:39:45-05:00">
   
 
   
@@ -329,16 +329,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          <a class="nav-link " href="/talks"><span>Talks</span></a>
         </li>
 
         
@@ -367,7 +360,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
         </li>
 
         
@@ -417,6 +410,35 @@
         
         
 
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
       
       </ul>
       <ul class="navbar-nav ml-auto">
@@ -432,10 +454,6 @@
 
         
 
-        
-        <li class="nav-item">
-          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
-        </li>
         
 
       </ul>
@@ -484,7 +502,7 @@
 
 
 <meta content="2019-11-30 12:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-12-26 10:22:47 -0500 EST" itemprop="dateModified">
+<meta content="2019-12-26 11:39:45 -0500 EST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -732,25 +750,40 @@
 
 <p><img src="neighbors.png" alt="Computing embeddings and finding nearest neighbors" /></p>
 
-<h2 id="experiments">Experiments</h2>
-
-<p>TODO</p>
-
 <h2 id="results">Results</h2>
-
-<p>TODO</p>
 
 <h3 id="visual-results">Visual Results</h3>
 
-<p><img src="visual1.png" alt="Good Results" />
-- <strong>Across all classes</strong> → Top two images retrieved correctly fetch birds with the correct pose</p>
+<p><img src="visual1.png" alt="Good Results" /></p>
 
-<p><img src="visual2.png" alt="Bad Results" />
-- <strong>Across all classes</strong> → Even in incorrect retrievals across classes, the pose and shape seem to match the intended object</p>
+<ul>
+<li>Here is one of our &ldquo;bad&rdquo; results &ndash; we can see that the correct instance image is present in the retrieved images</li>
+<li>We can also see that the other bird result also captures similar pose as the sketch</li>
+</ul>
+
+<p><img src="visual2.png" alt="Bad Results" /></p>
+
+<ul>
+<li>Here is one of our &ldquo;bad&rdquo; results &ndash; we see that the correct instance wasn&rsquo;t retrieved</li>
+<li>Additionally, the correct class wasn&rsquo;t retrieved either</li>
+<li>Note how despite the incorrect class/instance retrieval, we do see similarities in the pose and shape between the sketches and the retrieved images</li>
+</ul>
 
 <h3 id="comparison-to-baselines">Comparison to Baselines</h3>
 
 <p><img src="results_table.png" alt="Results table. Our methodology beats out feature pyramids without any supervision." /></p>
+
+<ul>
+<li>Although our approach didn&rsquo;t beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision</li>
+</ul>
+
+<h2 id="future-work">Future Work</h2>
+
+<ul>
+<li>Study the effects of further training on pretext task</li>
+<li>Use context-encoder as pretraining for supervised image retreival models</li>
+<li>Use more sophisticated feature extractors (like GoogLeNet or VGG) that more recent Sketch-Based Image Retrieval methods use</li>
+</ul>
 
     </div>
 
@@ -759,6 +792,10 @@
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tags/machine-learning/">machine learning</a>
+  
+  <a class="badge badge-light" href="/tags/self-supervised-learning/">self-supervised learning</a>
+  
+  <a class="badge badge-light" href="/tags/unsupervised-learning/">unsupervised learning</a>
   
   <a class="badge badge-light" href="/tags/computer-vision/">computer vision</a>
   

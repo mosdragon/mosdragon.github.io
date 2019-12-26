@@ -121,25 +121,40 @@
 
 &lt;p&gt;&lt;img src=&#34;neighbors.png&#34; alt=&#34;Computing embeddings and finding nearest neighbors&#34; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
-
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
 
 &lt;h3 id=&#34;visual-results&#34;&gt;Visual Results&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34; /&gt;
-- &lt;strong&gt;Across all classes&lt;/strong&gt; → Top two images retrieved correctly fetch birds with the correct pose&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34; /&gt;
-- &lt;strong&gt;Across all classes&lt;/strong&gt; → Even in incorrect retrievals across classes, the pose and shape seem to match the intended object&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we can see that the correct instance image is present in the retrieved images&lt;/li&gt;
+&lt;li&gt;We can also see that the other bird result also captures similar pose as the sketch&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we see that the correct instance wasn&amp;rsquo;t retrieved&lt;/li&gt;
+&lt;li&gt;Additionally, the correct class wasn&amp;rsquo;t retrieved either&lt;/li&gt;
+&lt;li&gt;Note how despite the incorrect class/instance retrieval, we do see similarities in the pose and shape between the sketches and the retrieved images&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;comparison-to-baselines&#34;&gt;Comparison to Baselines&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;results_table.png&#34; alt=&#34;Results table. Our methodology beats out feature pyramids without any supervision.&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Although our approach didn&amp;rsquo;t beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Study the effects of further training on pretext task&lt;/li&gt;
+&lt;li&gt;Use context-encoder as pretraining for supervised image retreival models&lt;/li&gt;
+&lt;li&gt;Use more sophisticated feature extractors (like GoogLeNet or VGG) that more recent Sketch-Based Image Retrieval methods use&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -166,9 +181,9 @@
     
     <item>
       <title>Generative Adversarial Networks Discussion</title>
-      <link>/talk/gans/</link>
+      <link>/talks/gans/</link>
       <pubDate>Thu, 28 Nov 2019 13:00:00 +0000</pubDate>
-      <guid>/talk/gans/</guid>
+      <guid>/talks/gans/</guid>
       <description>
 
 &lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
@@ -178,12 +193,11 @@
 &lt;/div&gt;
  --&gt;
 
-&lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
+&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
 
-&lt;p&gt;TODO
-&lt;!-- TODO --&gt;&lt;/p&gt;
+&lt;p&gt;I was enrolled in a seminar course titled &lt;em&gt;Learning with Limited Supervision&lt;/em&gt; in &lt;em&gt;Fall 2019&lt;/em&gt;, and each class a group of students would lead a discussion on a chosen paper. For my discussion, I chose the &lt;em&gt;Generative Adversarial Networks&lt;/em&gt; by Ian Goodfellow.&lt;/p&gt;
 
-&lt;!-- Slides can be added in a few ways: --&gt;
+&lt;p&gt;I was tasked with not only presenting the methodology, but also debating the strengths of the paper against my colleague who presented the paper&amp;rsquo;s weaknesses.&lt;/p&gt;
 
 &lt;!-- - **Create** slides using Academic&#39;s [*Slides*](https://sourcethemes.com/academic/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
 - **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
