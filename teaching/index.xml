@@ -15,21 +15,114 @@
     <item>
       <title>Introduction to Artificial Intelligence</title>
       <link>/teaching/intro_to_ai/</link>
-      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/teaching/intro_to_ai/</guid>
       <description>
 
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;I first took &lt;em&gt;CS3600: Introduction to Artificial Intelligence&lt;/em&gt; in Fall 2015. In
+Fall 2016, I decided I wanted to TA for the course, and that was my first term
+as a TA. Being a new TA, I was still getting the hang of the material, being
+able to explain content in my own words, and help student debug all sorts of
+issues.&lt;/p&gt;
 
-&lt;h2 id=&#34;developing-a-new-autograder&#34;&gt;Developing a New Autograder&lt;/h2&gt;
+&lt;p&gt;In Spring 2019, during my Master&amp;rsquo;s program, I decided to TA for the course
+again. This time, I had graduate-level experience in some of these topics such
+as Machine Learning, so I went in with much more confidence ready to help
+students grasp the material.&lt;/p&gt;
 
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;Finally, in Fall 2019, I was chosen to be the Head TA for the course, which now
+had two sections with a total of 450+ students and 18 TAs.&lt;/p&gt;
 
-&lt;h2 id=&#34;leading-review-sessions&#34;&gt;Leading Review Sessions&lt;/h2&gt;
+&lt;h2 id=&#34;mass-autograder-system&#34;&gt;Mass Autograder System&lt;/h2&gt;
 
-&lt;p&gt;TODO&lt;/p&gt;
+&lt;p&gt;During my term as a Head TA, one of the biggest challenges I faced was the issue
+of grading projects. With the number of students we had and the pace of the
+course, we simply couldn&amp;rsquo;t expect that all TAs would be able to grade a large
+block of students manually with only a few days notice, nor could we expect
+students to wait 3+ weeks to get feedback on their submissions.&lt;/p&gt;
+
+&lt;p&gt;Although the projects we used for the course already came
+with test cases for students to validate their implementations, as TAs we still
+had to run our own tests to ensure that students didn&amp;rsquo;t trivialize the
+assignment by using functions or libraries we explicitly forbid. Additionally,
+we also wanted to run plagiarism detectors to ensure students didn&amp;rsquo;t use code
+they found off of the internet.&lt;/p&gt;
+
+&lt;p&gt;The previous solution we had for doing this in bits in pieces had a number of
+major issues:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Brittle&lt;/strong&gt;: it was unable to handle submissions that weren&amp;rsquo;t in the &lt;em&gt;exact&lt;/em&gt;
+submission file hierarchy the assignment requested, even if all of the
+necessary source files were submitted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unreliable&lt;/strong&gt;: Sometimes the library would just not be able to handle
+common compression formats like _gzip_s, and these faulty submissions would
+have to be identified and regraded manually.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lacking key features&lt;/strong&gt;: Graded submissions would be output in raw text files, meaning
+a TA would have to manually go in an enter those grades in the gradebook, all
+450+ of them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided it would be worth the time to create a new solution that would remedy
+all of these issues and would be easy enough for future Head TAs to run without
+any issues. Here are some of the key highlights of the implementation I completed the
+first three weeks into the semester:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Automatic exporting of grades to the full gradebook&lt;/li&gt;
+&lt;li&gt;Support for submissions with variations on the file hierarchies&lt;/li&gt;
+&lt;li&gt;Easy extensible for future projects to be added to the course&lt;/li&gt;
+&lt;li&gt;Improved plagiarism detection&lt;/li&gt;
+&lt;li&gt;Extensive logging to ensure TAs can catch issues early on&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;project-review-sessions&#34;&gt;Project Review Sessions&lt;/h2&gt;
+
+&lt;p&gt;Although this course doesn&amp;rsquo;t have formal recitations, the TAs for this course
+have typically taken it upon themselves to lead several review sessions
+throughout the semester for students to hear the material delivered at a slower
+pace by their peers as well as ask any questions they may have on course
+concepts. These sessions were mainly geared towards preparing students for the
+upcoming projects since they were such a large portion of the students&amp;rsquo; grades.&lt;/p&gt;
+
+&lt;p&gt;In previous semesters, the TAs had typically explained concepts verbally, with a
+bit of psuedocode given for common algorithms such as Djikstra&amp;rsquo;s Algorithm or the
+Bellman Update Equation, however I had always felt as though students were able
+to implement these in the projects and get by in the course without having a
+firm understanding of why they worked. Many students struggled heavily on the
+exams in those same concepts that they glossed over since they could implement
+the projects without that understanding.&lt;/p&gt;
+
+&lt;p&gt;To remedy this, I decided to create extensive review guides for the review
+sessions that could be used long after I had left Georgia Tech. With a handful
+of other TAs, we managed to produce well over 30 pages total of explanations of
+core concepts for the course.&lt;/p&gt;
+
+&lt;p&gt;Here are the review guides we created:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;project1.pdf&#34; target=&#34;_blank&#34;&gt;Graph Search Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project2.pdf&#34; target=&#34;_blank&#34;&gt;Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project3.pdf&#34; target=&#34;_blank&#34;&gt;Probabilitic Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project4b.pdf&#34; target=&#34;_blank&#34;&gt;Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project4a.pdf&#34; target=&#34;_blank&#34;&gt;Decision Trees&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition, these TAs and I led the hour-long review sessions for the projects
+where we presented this material to our students. Sessions typically had 30-40
+students, and we addressed questions with illustrations, equations, or any other
+means of getting the students to understand the material.&lt;/p&gt;
+
+&lt;h2 id=&#34;reflections&#34;&gt;Reflections&lt;/h2&gt;
+
+&lt;p&gt;It was a true honor and privilege to be the Head TA for this course. Not only
+did having so many students push me to refine my own understanding of even the
+subtle edge cases, but it also gave me the opportunity to bring what I have
+always felt were some very necessary changes to the course. I&amp;rsquo;m hopeful that the
+students were able to reap all of the benefits of these changes and that it
+truly inspires them to pursue research and careers in Artificial Intelligence.&lt;/p&gt;
 </description>
     </item>
     
