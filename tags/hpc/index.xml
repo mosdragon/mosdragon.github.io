@@ -17,6 +17,7 @@
       <link>/project/hpc/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       <guid>/project/hpc/</guid>
+<<<<<<< HEAD
       <description>
 
 &lt;h2 id=&#34;background&#34;&gt;Background:&lt;/h2&gt;
@@ -53,14 +54,37 @@
 
 &lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
 
+=======
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background:&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Graph_theory&#34;&gt;Graph Theory&lt;/a&gt; was among my favorite topics during my undergraduate studies, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: &lt;em&gt;Devices&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;I joined &lt;a href=&#34;https://www.cc.gatech.edu/~ogreen/&#34;&gt;Dr. Oded Green&lt;/a&gt; that term, and we began work immediately on &lt;a href=&#34;https://en.wikipedia.org/wiki/Dynamic_connectivity&#34;&gt;Streaming Graphs&lt;/a&gt; (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.&lt;/p&gt;
+&lt;h2 id=&#34;problem-betweenness-centrality-on-streaming-graphs&#34;&gt;Problem: Betweenness Centrality on Streaming Graphs&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Betweenness_centrality&#34;&gt;Betweenness Centrality&lt;/a&gt;(BC) is a measure of a node&#39;s centrality in a graph based on it&#39;s presence in shortest paths.&lt;/p&gt;
+&lt;p&gt;Think of it as the &lt;em&gt;hub&lt;/em&gt; that connects many different transportation lines. The more dependent other transportation lines are on a given &lt;em&gt;hub&lt;/em&gt;, the more central that &lt;em&gt;hub&lt;/em&gt; is to the network.&lt;/p&gt;
+&lt;p&gt;On a static graph, we can compute the BC values for each node pretty easily (in terms of time complexity). However, real-world graphs like Facebook&#39;s Social Network Graph contain hundreds of millions of nodes and billions of edges. If we wanted up-to-date BC values for graphs of this scale, re-computing BC each time a node/edge is &lt;em&gt;inserted&lt;/em&gt; or &lt;em&gt;delete&lt;/em&gt; becomes infeasible.&lt;/p&gt;
+&lt;p&gt;So that&#39;s our task: Given a graph and then a sequence of insertions/deletions, can we accurately compute the BC values without recomputing on the entire graph?&lt;/p&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach:&lt;/h2&gt;
+&lt;p&gt;We created a framework called &lt;a href=&#34;https://github.com/cuStinger/cuStinger&#34;&gt;cuStinger&lt;/a&gt; (a &lt;em&gt;portmanteau&lt;/em&gt; of &lt;em&gt;Cuda&lt;/em&gt; and &lt;em&gt;Stinger&lt;/em&gt;), which served as the backbone of our adventure in getting Streaming BC going.&lt;/p&gt;
+&lt;p&gt;Using this framework (which saved us largely from writing repetitive Cuda code), we implemented the algorithm as described &lt;a href=&#34;https://scholar.google.com/citations?user=C_7l2roAAAAJ&amp;amp;hl=en#d=gs_md_cita-d&amp;amp;p=&amp;amp;u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DC_7l2roAAAAJ%26citation_for_view%3DC_7l2roAAAAJ%3A9yKSN-GCB0IC%26tzom%3D300&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;challenges&#34;&gt;Challenges:&lt;/h2&gt;
+&lt;p&gt;Since we were using Nvidia GPUs and Cuda under the hood, we had various challenges with race conditions, mutex locks, and validating results.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results:&lt;/h2&gt;
+&lt;p&gt;By the end of that year, we managed to have a running version that handled &lt;em&gt;most&lt;/em&gt; edge cases of streaming graphs. There were some we hadn&#39;t implemented yet when I left the lab.&lt;/p&gt;
+&lt;p&gt;A few weeks later, the lab moved onto a new framework (developed in-house with Oded and his lab), &lt;a href=&#34;https://github.com/hornet-gt/hornet&#34;&gt;Hornet&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;Parallel Computation comes with some challenges, be ready&lt;/li&gt;
 &lt;li&gt;Advances in GPU programming are opening doors to many new areas ripe for exploration&lt;/li&gt;
 &lt;li&gt;ALWAYS write tests to validate results (we compared our Streaming BC results to our Static BC at each insertion/deletion)&lt;/li&gt;
 &lt;/ul&gt;
+<<<<<<< HEAD
 
 &lt;h2 id=&#34;tools-used&#34;&gt;Tools Used&lt;/h2&gt;
 
+=======
+&lt;h2 id=&#34;tools-used&#34;&gt;Tools Used&lt;/h2&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;C/C++&lt;/li&gt;
 &lt;li&gt;Cuda&lt;/li&gt;

@@ -80,7 +80,11 @@
   
   
   
+<<<<<<< HEAD
   <link rel="stylesheet" href="/css/academic.min.6bd344131bb7ccd9144e7cff0de68ea0.css">
+=======
+  <link rel="stylesheet" href="/css/academic.min.a86f84713e8e0b50995bbbfc63def9b9.css">
+>>>>>>> Local
 
   
 
@@ -251,36 +255,11 @@
         
 
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link " href="/#skills"><span>Skills</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
+=======
           <a class="nav-link " href="/#projects"><span>Projects</span></a>
+>>>>>>> Local
         </li>
 
         
@@ -309,6 +288,40 @@
         
 
         <li class="nav-item">
+<<<<<<< HEAD
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+=======
+          <a class="nav-link " href="/#experience"><span>Experience</span></a>
+>>>>>>> Local
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
         </li>
 
@@ -332,6 +345,9 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/talks"><span>Talks</span></a>
+=======
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+>>>>>>> Local
         </li>
 
         
@@ -393,8 +409,11 @@
         
         
         
+<<<<<<< HEAD
           
         
+=======
+>>>>>>> Local
 
         
         
@@ -404,7 +423,11 @@
         
 
         <li class="nav-item">
+<<<<<<< HEAD
           <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+=======
+          <a class="nav-link " href="/post"><span>Posts</span></a>
+>>>>>>> Local
         </li>
 
         
@@ -424,6 +447,7 @@
         
         
         
+<<<<<<< HEAD
           
           
           
@@ -434,6 +458,11 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#posts"><span>Posts</span></a>
+=======
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+>>>>>>> Local
         </li>
 
         
@@ -700,6 +729,7 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
+<<<<<<< HEAD
       
 
 <h2 id="background">Background:</h2>
@@ -736,14 +766,37 @@
 
 <h2 id="lessons-learned">Lessons Learned</h2>
 
+=======
+      <h2 id="background">Background:</h2>
+<p><a href="https://en.wikipedia.org/wiki/Graph_theory">Graph Theory</a> was among my favorite topics during my undergraduate studies, and in Fall 2016, I managed to find research that would build on my interests in that area as well as leverage the Systems background I had (from one of concentration areas: <em>Devices</em>).</p>
+<p>I joined <a href="https://www.cc.gatech.edu/~ogreen/">Dr. Oded Green</a> that term, and we began work immediately on <a href="https://en.wikipedia.org/wiki/Dynamic_connectivity">Streaming Graphs</a> (also known as Dynamic Graphs). These are graphs where the Nodes $V$ and Edges $E$ change over time.</p>
+<h2 id="problem-betweenness-centrality-on-streaming-graphs">Problem: Betweenness Centrality on Streaming Graphs</h2>
+<p><a href="https://en.wikipedia.org/wiki/Betweenness_centrality">Betweenness Centrality</a>(BC) is a measure of a node's centrality in a graph based on it's presence in shortest paths.</p>
+<p>Think of it as the <em>hub</em> that connects many different transportation lines. The more dependent other transportation lines are on a given <em>hub</em>, the more central that <em>hub</em> is to the network.</p>
+<p>On a static graph, we can compute the BC values for each node pretty easily (in terms of time complexity). However, real-world graphs like Facebook's Social Network Graph contain hundreds of millions of nodes and billions of edges. If we wanted up-to-date BC values for graphs of this scale, re-computing BC each time a node/edge is <em>inserted</em> or <em>delete</em> becomes infeasible.</p>
+<p>So that's our task: Given a graph and then a sequence of insertions/deletions, can we accurately compute the BC values without recomputing on the entire graph?</p>
+<h2 id="approach">Approach:</h2>
+<p>We created a framework called <a href="https://github.com/cuStinger/cuStinger">cuStinger</a> (a <em>portmanteau</em> of <em>Cuda</em> and <em>Stinger</em>), which served as the backbone of our adventure in getting Streaming BC going.</p>
+<p>Using this framework (which saved us largely from writing repetitive Cuda code), we implemented the algorithm as described <a href="https://scholar.google.com/citations?user=C_7l2roAAAAJ&amp;hl=en#d=gs_md_cita-d&amp;p=&amp;u=%2Fcitations%3Fview_op%3Dview_citation%26hl%3Den%26user%3DC_7l2roAAAAJ%26citation_for_view%3DC_7l2roAAAAJ%3A9yKSN-GCB0IC%26tzom%3D300">here</a>.</p>
+<h2 id="challenges">Challenges:</h2>
+<p>Since we were using Nvidia GPUs and Cuda under the hood, we had various challenges with race conditions, mutex locks, and validating results.</p>
+<h2 id="results">Results:</h2>
+<p>By the end of that year, we managed to have a running version that handled <em>most</em> edge cases of streaming graphs. There were some we hadn't implemented yet when I left the lab.</p>
+<p>A few weeks later, the lab moved onto a new framework (developed in-house with Oded and his lab), <a href="https://github.com/hornet-gt/hornet">Hornet</a>.</p>
+<h2 id="lessons-learned">Lessons Learned</h2>
+>>>>>>> Local
 <ul>
 <li>Parallel Computation comes with some challenges, be ready</li>
 <li>Advances in GPU programming are opening doors to many new areas ripe for exploration</li>
 <li>ALWAYS write tests to validate results (we compared our Streaming BC results to our Static BC at each insertion/deletion)</li>
 </ul>
+<<<<<<< HEAD
 
 <h2 id="tools-used">Tools Used</h2>
 
+=======
+<h2 id="tools-used">Tools Used</h2>
+>>>>>>> Local
 <ul>
 <li>C/C++</li>
 <li>Cuda</li>
@@ -992,7 +1045,11 @@
   
 
   <p class="powered-by">
+<<<<<<< HEAD
     Osama Sakhi &copy; 2019 &middot; 
+=======
+    Osama Sakhi © 2019 &middot; 
+>>>>>>> Local
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

@@ -5,7 +5,11 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Osama Sakhi</description>
+<<<<<<< HEAD
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Sat, 30 Nov 2019 12:00:00 +0000</lastBuildDate>
+=======
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+>>>>>>> Local
     <image>
       <url>/img/icon-192.png</url>
       <title>Osama Sakhi</title>
@@ -13,6 +17,7 @@
     </image>
     
     <item>
+<<<<<<< HEAD
       <title>Pathfinding</title>
       <link>/teaching/tip/pathfinding/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
@@ -350,10 +355,49 @@
       <link>/publication/sumo/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/publication/sumo/</guid>
+=======
+      <title>Projects</title>
+      <link>/project/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/project/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Slides</title>
+      <link>/slides/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Talks</title>
+      <link>/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/talk/</guid>
+>>>>>>> Local
+      <description></description>
+    </item>
+    
+    <item>
+<<<<<<< HEAD
       <title>Slides</title>
       <link>/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -532,6 +576,13 @@ $$&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
+=======
+      <title>Teaching</title>
+      <link>/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/teaching/</guid>
+      <description></description>
+>>>>>>> Local
     </item>
     
   </channel>

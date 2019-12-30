@@ -17,6 +17,7 @@
       <link>/project/crossdom/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
       <guid>/project/crossdom/</guid>
+<<<<<<< HEAD
       <description>
 
 &lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;
@@ -38,30 +39,56 @@
 
 &lt;h3 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h3&gt;
 
+=======
+      <description>&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Given a hand-drawn sketch, retrieve the image instance that this sketch was drawn for
+&lt;img src=&#34;probstatement.png&#34; alt=&#34;&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-work&#34;&gt;Related Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1505.05192&#34;&gt;Unsupervised Visual Representation Learning by Context Prediction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sketchy.eye.gatech.edu/paper.pdf&#34;&gt;The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0925231217314364#!&#34;&gt;Cross-modal Subspace Learning for fine-grained sketch-based image retrieval&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;h3 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h3&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;Aligned, paired images available. For this, we compute canny edges of the images in the PASCAL VOC dataset.&lt;/li&gt;
 &lt;li&gt;Clustering image and sketch embeddings from a well-trained network will result in well-formed discrete clusters that are domain agnostic.&lt;/li&gt;
 &lt;li&gt;The model that performs well on cross domain context prediction will perform well on the cross-domain image retrieval task.&lt;/li&gt;
 &lt;/ul&gt;
+<<<<<<< HEAD
 
 &lt;h3 id=&#34;pre-text-task&#34;&gt;Pre-text Task&lt;/h3&gt;
 
+=======
+&lt;h3 id=&#34;pre-text-task&#34;&gt;Pre-text Task&lt;/h3&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;We divide the image into 4 regions, with uneven spacing and jitter&lt;/li&gt;
 &lt;li&gt;We then extract two patches, one from each domain, i.e. images from Pascal, and their Canny edges&lt;/li&gt;
 &lt;li&gt;We finally compute the relative positioning of the patches using the context encoder&lt;/li&gt;
 &lt;/ul&gt;
+<<<<<<< HEAD
 
 &lt;p&gt;&lt;img src=&#34;spatial.png&#34; alt=&#34;Spatial relation between patches&#34; /&gt;
 &lt;img src=&#34;classification.png&#34; alt=&#34;AlexNet-inspired classification architecture&#34; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;image-retrieval&#34;&gt;Image Retrieval&lt;/h3&gt;
 
+=======
+&lt;p&gt;&lt;img src=&#34;spatial.png&#34; alt=&#34;Spatial relation between patches&#34;&gt;
+&lt;img src=&#34;classification.png&#34; alt=&#34;AlexNet-inspired classification architecture&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;image-retrieval&#34;&gt;Image Retrieval&lt;/h3&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;We first compute embeddings for the query sketch using AlexNet trained on the pretext&lt;/li&gt;
 &lt;li&gt;We then perform a nearest neighbour search on the embeddings from the dataset of images&lt;/li&gt;
 &lt;li&gt;We retrieve the nearest 5 and 10 images for top-5 and top-10 similarity scores&lt;/li&gt;
 &lt;/ul&gt;
+<<<<<<< HEAD
 
 &lt;p&gt;&lt;img src=&#34;neighbors.png&#34; alt=&#34;Computing embeddings and finding nearest neighbors&#34; /&gt;&lt;/p&gt;
 
@@ -71,10 +98,17 @@
 
 &lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34; /&gt;&lt;/p&gt;
 
+=======
+&lt;p&gt;&lt;img src=&#34;neighbors.png&#34; alt=&#34;Computing embeddings and finding nearest neighbors&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;h3 id=&#34;visual-results&#34;&gt;Visual Results&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;visual1.png&#34; alt=&#34;Good Results&#34;&gt;&lt;/p&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we can see that the correct instance image is present in the retrieved images&lt;/li&gt;
 &lt;li&gt;We can also see that the other bird result also captures similar pose as the sketch&lt;/li&gt;
 &lt;/ul&gt;
+<<<<<<< HEAD
 
 &lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34; /&gt;&lt;/p&gt;
 
@@ -94,6 +128,20 @@
 
 &lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
 
+=======
+&lt;p&gt;&lt;img src=&#34;visual2.png&#34; alt=&#34;Bad Results&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is one of our &amp;ldquo;bad&amp;rdquo; results &amp;ndash; we see that the correct instance wasn&#39;t retrieved&lt;/li&gt;
+&lt;li&gt;Additionally, the correct class wasn&#39;t retrieved either&lt;/li&gt;
+&lt;li&gt;Note how despite the incorrect class/instance retrieval, we do see similarities in the pose and shape between the sketches and the retrieved images&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;comparison-to-baselines&#34;&gt;Comparison to Baselines&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;results_table.png&#34; alt=&#34;Results table. Our methodology beats out feature pyramids without any supervision.&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Although our approach didn&#39;t beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+>>>>>>> Local
 &lt;ul&gt;
 &lt;li&gt;Study the effects of further training on pretext task&lt;/li&gt;
 &lt;li&gt;Use context-encoder as pretraining for supervised image retreival models&lt;/li&gt;
