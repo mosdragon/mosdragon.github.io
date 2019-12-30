@@ -80,11 +80,7 @@
   
   
   
-<<<<<<< HEAD
-  <link rel="stylesheet" href="/css/academic.min.6bd344131bb7ccd9144e7cff0de68ea0.css">
-=======
   <link rel="stylesheet" href="/css/academic.min.a86f84713e8e0b50995bbbfc63def9b9.css">
->>>>>>> Local
 
   
 
@@ -255,11 +251,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#skills"><span>Skills</span></a>
-=======
           <a class="nav-link " href="/#projects"><span>Projects</span></a>
->>>>>>> Local
         </li>
 
         
@@ -288,11 +280,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-=======
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
->>>>>>> Local
         </li>
 
         
@@ -321,33 +309,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#experience"><span>Experience</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/talks"><span>Talks</span></a>
-=======
           <a class="nav-link " href="/#talks"><span>Talks</span></a>
->>>>>>> Local
         </li>
 
         
@@ -409,11 +371,6 @@
         
         
         
-<<<<<<< HEAD
-          
-        
-=======
->>>>>>> Local
 
         
         
@@ -423,11 +380,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
-=======
           <a class="nav-link " href="/post"><span>Posts</span></a>
->>>>>>> Local
         </li>
 
         
@@ -447,22 +400,9 @@
         
         
         
-<<<<<<< HEAD
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-=======
 
         <li class="nav-item">
           <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
->>>>>>> Local
         </li>
 
         
@@ -731,29 +671,6 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-<<<<<<< HEAD
-      
-
-<h2 id="problem-statement">Problem Statement</h2>
-
-<ul>
-<li>Given a hand-drawn sketch, retrieve the image instance that this sketch was drawn for
-<img src="probstatement.png" alt="" /></li>
-</ul>
-
-<h2 id="related-work">Related Work</h2>
-
-<ul>
-<li><a href="https://arxiv.org/abs/1505.05192" target="_blank">Unsupervised Visual Representation Learning by Context Prediction</a></li>
-<li><a href="http://sketchy.eye.gatech.edu/paper.pdf" target="_blank">The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231217314364#!" target="_blank">Cross-modal Subspace Learning for fine-grained sketch-based image retrieval</a></li>
-</ul>
-
-<h2 id="approach">Approach</h2>
-
-<h3 id="assumptions">Assumptions</h3>
-
-=======
       <h2 id="problem-statement">Problem Statement</h2>
 <ul>
 <li>Given a hand-drawn sketch, retrieve the image instance that this sketch was drawn for
@@ -767,82 +684,33 @@
 </ul>
 <h2 id="approach">Approach</h2>
 <h3 id="assumptions">Assumptions</h3>
->>>>>>> Local
 <ul>
 <li>Aligned, paired images available. For this, we compute canny edges of the images in the PASCAL VOC dataset.</li>
 <li>Clustering image and sketch embeddings from a well-trained network will result in well-formed discrete clusters that are domain agnostic.</li>
 <li>The model that performs well on cross domain context prediction will perform well on the cross-domain image retrieval task.</li>
 </ul>
-<<<<<<< HEAD
-
 <h3 id="pre-text-task">Pre-text Task</h3>
-
-=======
-<h3 id="pre-text-task">Pre-text Task</h3>
->>>>>>> Local
 <ul>
 <li>We divide the image into 4 regions, with uneven spacing and jitter</li>
 <li>We then extract two patches, one from each domain, i.e. images from Pascal, and their Canny edges</li>
 <li>We finally compute the relative positioning of the patches using the context encoder</li>
 </ul>
-<<<<<<< HEAD
-
-<p><img src="spatial.png" alt="Spatial relation between patches" />
-<img src="classification.png" alt="AlexNet-inspired classification architecture" /></p>
-
-<h3 id="image-retrieval">Image Retrieval</h3>
-
-=======
 <p><img src="spatial.png" alt="Spatial relation between patches">
 <img src="classification.png" alt="AlexNet-inspired classification architecture"></p>
 <h3 id="image-retrieval">Image Retrieval</h3>
->>>>>>> Local
 <ul>
 <li>We first compute embeddings for the query sketch using AlexNet trained on the pretext</li>
 <li>We then perform a nearest neighbour search on the embeddings from the dataset of images</li>
 <li>We retrieve the nearest 5 and 10 images for top-5 and top-10 similarity scores</li>
 </ul>
-<<<<<<< HEAD
-
-<p><img src="neighbors.png" alt="Computing embeddings and finding nearest neighbors" /></p>
-
-<h2 id="results">Results</h2>
-
-<h3 id="visual-results">Visual Results</h3>
-
-<p><img src="visual1.png" alt="Good Results" /></p>
-
-=======
 <p><img src="neighbors.png" alt="Computing embeddings and finding nearest neighbors"></p>
 <h2 id="results">Results</h2>
 <h3 id="visual-results">Visual Results</h3>
 <p><img src="visual1.png" alt="Good Results"></p>
->>>>>>> Local
 <ul>
 <li>Here is one of our &ldquo;bad&rdquo; results &ndash; we can see that the correct instance image is present in the retrieved images</li>
 <li>We can also see that the other bird result also captures similar pose as the sketch</li>
 </ul>
-<<<<<<< HEAD
-
-<p><img src="visual2.png" alt="Bad Results" /></p>
-
-<ul>
-<li>Here is one of our &ldquo;bad&rdquo; results &ndash; we see that the correct instance wasn&rsquo;t retrieved</li>
-<li>Additionally, the correct class wasn&rsquo;t retrieved either</li>
-<li>Note how despite the incorrect class/instance retrieval, we do see similarities in the pose and shape between the sketches and the retrieved images</li>
-</ul>
-
-<h3 id="comparison-to-baselines">Comparison to Baselines</h3>
-
-<p><img src="results_table.png" alt="Results table. Our methodology beats out feature pyramids without any supervision." /></p>
-
-<ul>
-<li>Although our approach didn&rsquo;t beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision</li>
-</ul>
-
-<h2 id="future-work">Future Work</h2>
-
-=======
 <p><img src="visual2.png" alt="Bad Results"></p>
 <ul>
 <li>Here is one of our &ldquo;bad&rdquo; results &ndash; we see that the correct instance wasn't retrieved</li>
@@ -855,7 +723,6 @@
 <li>Although our approach didn't beat out our main baseline, the Sketchy database approach, we were able to beat out the feature pyramid approach with no supervision</li>
 </ul>
 <h2 id="future-work">Future Work</h2>
->>>>>>> Local
 <ul>
 <li>Study the effects of further training on pretext task</li>
 <li>Use context-encoder as pretraining for supervised image retreival models</li>
@@ -1110,11 +977,7 @@
   
 
   <p class="powered-by">
-<<<<<<< HEAD
-    Osama Sakhi &copy; 2019 &middot; 
-=======
     Osama Sakhi © 2019 &middot; 
->>>>>>> Local
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

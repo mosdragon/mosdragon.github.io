@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-=======
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
->>>>>>> Local
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -32,20 +28,6 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>/tags/computer-vision/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/crossdom/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-=======
     <loc>/tags/machine-learning/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
@@ -53,75 +35,30 @@
   <url>
     <loc>/tags/natural-language-processing/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/project/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/tags/research/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/self-supervised-learning/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/social-computing/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/tags/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/unsupervised-learning/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/natural-language-processing/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/social-computing/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/reduce/</loc>
-    <lastmod>2019-11-29T14:56:54-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talks/gans/</loc>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
@@ -147,19 +84,15 @@
   
   <url>
     <loc>/tags/unsupervised-learning/</loc>
->>>>>>> Local
     <lastmod>2019-12-26T11:39:45-05:00</lastmod>
   </url>
   
   <url>
-<<<<<<< HEAD
-=======
     <loc>/talk/gans/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
   </url>
   
   <url>
->>>>>>> Local
     <loc>/project/sumo/</loc>
     <lastmod>2019-09-03T01:09:32-04:00</lastmod>
   </url>
@@ -181,146 +114,82 @@
   
   <url>
     <loc>/authors/admin/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/publication_types/3/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/daniel-huber/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/frank-dellaert/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/ilke-demir/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/jimmy-wu/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/lyne-p.-tchapmi/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/richard-skarbez/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/shuran-song/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/silvio-savarese/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/publication/sumo/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/thomas-funkhouser/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/xingyuan-sun/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
     <loc>/authors/zhile-ren/</loc>
-<<<<<<< HEAD
-    <lastmod>2019-12-26T10:14:26-05:00</lastmod>
-=======
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>
@@ -348,13 +217,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>/talks/</loc>
-    <lastmod>2019-12-26T11:39:45-05:00</lastmod>
-=======
     <loc>/talk/</loc>
     <lastmod>2019-12-29T23:35:22-05:00</lastmod>
->>>>>>> Local
   </url>
   
   <url>

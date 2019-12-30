@@ -5,11 +5,7 @@
     <link>/tags/natural-language-processing/</link>
       <atom:link href="/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
     <description>natural language processing</description>
-<<<<<<< HEAD
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
-=======
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
->>>>>>> Local
     <image>
       <url>/img/icon-192.png</url>
       <title>natural language processing</title>
@@ -19,23 +15,6 @@
     <item>
       <title>The REDUCE Project</title>
       <link>/project/reduce/</link>
-<<<<<<< HEAD
-      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/project/reduce/</guid>
-      <description>
-
-&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
-
-&lt;h2 id=&#34;approaches&#34;&gt;Approaches&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
-
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-
-&lt;p&gt;TODO&lt;/p&gt;
-=======
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/project/reduce/</guid>
       <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
@@ -46,7 +25,6 @@
 &lt;p&gt;With the tweets, I have built various embeddings for each tweet. These embeddings are aggregated in various ways to produce a representation for a week&#39;s worth of tweets at a time, and that representation is then fed into various regressors. The best trained regressor will be used as one learner in our final ensemble approach, which will consist of learners for the other data sources we have, such as CDC suicide data, Google Health data, Reddit language model data, etc.&lt;/p&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;p&gt;This project is ongoing, so we don&#39;t have much to report just yet. What we can say, however, is that the models built from the tweets seems to be very capable in our initial results. For one of our models, we found that the representation of tweets at a weekly granularity produced a model that performed nearly as well as the models built with just historical data (which is limited and is only available every 2 years).&lt;/p&gt;
->>>>>>> Local
 </description>
     </item>
     

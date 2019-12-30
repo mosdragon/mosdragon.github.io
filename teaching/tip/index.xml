@@ -17,21 +17,10 @@
       <link>/teaching/tip/pathfinding/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
       <guid>/teaching/tip/pathfinding/</guid>
-<<<<<<< HEAD
-      <description>
-
-&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
-
-&lt;p&gt;Here are links to the projects I used for my students during the Pathfinding portion of the course:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://ai.berkeley.edu/search.html&#34; target=&#34;_blank&#34;&gt;Pacman Search Project&lt;/a&gt;&lt;/li&gt;
-=======
       <description>&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
 &lt;p&gt;Here are links to the projects I used for my students during the Pathfinding portion of the course:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://ai.berkeley.edu/search.html&#34;&gt;Pacman Search Project&lt;/a&gt;&lt;/li&gt;
->>>>>>> Local
 &lt;/ul&gt;
 </description>
     </item>
@@ -41,21 +30,6 @@
       <link>/teaching/tip/ml/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
       <guid>/teaching/tip/ml/</guid>
-<<<<<<< HEAD
-      <description>
-
-&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
-
-&lt;p&gt;Here are links to the repos/projects I created or used for my students during the Machine Learning portion of the course:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml&#34; target=&#34;_blank&#34;&gt;Repository for AI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/machine_learning_walkthrough.ipynb&#34; target=&#34;_blank&#34;&gt;Machine Learning Experiment Walkthrough&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/cross_validation_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Cross-Validation Tutorial&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/naive_bayes.ipynb&#34; target=&#34;_blank&#34;&gt;Naive Bayes by Hand&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/neural_networks_by_hand.ipynb&#34; target=&#34;_blank&#34;&gt;Neural Networks by Hand&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/regression_tutorial.ipynb&#34; target=&#34;_blank&#34;&gt;Regression Tutorial&lt;/a&gt;&lt;/li&gt;
-=======
       <description>&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
 &lt;p&gt;Here are links to the repos/projects I created or used for my students during the Machine Learning portion of the course:&lt;/p&gt;
 &lt;ul&gt;
@@ -65,7 +39,6 @@
 &lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/naive_bayes.ipynb&#34;&gt;Naive Bayes by Hand&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/neural_networks_by_hand.ipynb&#34;&gt;Neural Networks by Hand&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/regression_tutorial.ipynb&#34;&gt;Regression Tutorial&lt;/a&gt;&lt;/li&gt;
->>>>>>> Local
 &lt;/ul&gt;
 </description>
     </item>
@@ -75,21 +48,10 @@
       <link>/teaching/tip/nlp/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0100</pubDate>
       <guid>/teaching/tip/nlp/</guid>
-<<<<<<< HEAD
-      <description>
-
-&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
-
-&lt;p&gt;Here are links to the projects I created or used for my students during the Natural Language Processing portion of the course:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/amazon_reviews_classification.ipynb&#34; target=&#34;_blank&#34;&gt;Sentiment Analysis of Amazon Reviews&lt;/a&gt;&lt;/li&gt;
-=======
       <description>&lt;h2 id=&#34;project-links&#34;&gt;Project Links&lt;/h2&gt;
 &lt;p&gt;Here are links to the projects I created or used for my students during the Natural Language Processing portion of the course:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/mosdragon/teach_ml/blob/master/amazon_reviews_classification.ipynb&#34;&gt;Sentiment Analysis of Amazon Reviews&lt;/a&gt;&lt;/li&gt;
->>>>>>> Local
 &lt;/ul&gt;
 </description>
     </item>

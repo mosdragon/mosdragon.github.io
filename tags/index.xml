@@ -5,11 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-<<<<<<< HEAD
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Sat, 30 Nov 2019 12:00:00 +0000</lastBuildDate>
-=======
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
->>>>>>> Local
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -17,104 +13,58 @@
     </image>
     
     <item>
-<<<<<<< HEAD
-      <title>computer vision</title>
-      <link>/tags/computer-vision/</link>
-      <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/computer-vision/</guid>
-=======
       <title>machine learning</title>
       <link>/tags/machine-learning/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/tags/machine-learning/</guid>
->>>>>>> Local
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>machine learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
-=======
       <title>natural language processing</title>
       <link>/tags/natural-language-processing/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/tags/natural-language-processing/</guid>
->>>>>>> Local
       <description></description>
     </item>
     
     <item>
       <title>research</title>
       <link>/tags/research/</link>
-<<<<<<< HEAD
-      <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-=======
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
->>>>>>> Local
       <guid>/tags/research/</guid>
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>self-supervised learning</title>
-      <link>/tags/self-supervised-learning/</link>
-      <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/self-supervised-learning/</guid>
-=======
       <title>social computing</title>
       <link>/tags/social-computing/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/tags/social-computing/</guid>
->>>>>>> Local
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>unsupervised learning</title>
-      <link>/tags/unsupervised-learning/</link>
-      <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/unsupervised-learning/</guid>
-=======
       <title>computer vision</title>
       <link>/tags/computer-vision/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
       <guid>/tags/computer-vision/</guid>
->>>>>>> Local
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>natural language processing</title>
-      <link>/tags/natural-language-processing/</link>
-      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/natural-language-processing/</guid>
-=======
       <title>self-supervised learning</title>
       <link>/tags/self-supervised-learning/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
       <guid>/tags/self-supervised-learning/</guid>
->>>>>>> Local
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>social computing</title>
-      <link>/tags/social-computing/</link>
-      <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/social-computing/</guid>
-=======
       <title>unsupervised learning</title>
       <link>/tags/unsupervised-learning/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
       <guid>/tags/unsupervised-learning/</guid>
->>>>>>> Local
       <description></description>
     </item>
     

@@ -80,11 +80,7 @@
   
   
   
-<<<<<<< HEAD
-  <link rel="stylesheet" href="/css/academic.min.6bd344131bb7ccd9144e7cff0de68ea0.css">
-=======
   <link rel="stylesheet" href="/css/academic.min.a86f84713e8e0b50995bbbfc63def9b9.css">
->>>>>>> Local
 
   
 
@@ -255,11 +251,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#skills"><span>Skills</span></a>
-=======
           <a class="nav-link " href="/#projects"><span>Projects</span></a>
->>>>>>> Local
         </li>
 
         
@@ -288,11 +280,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
-=======
           <a class="nav-link " href="/#experience"><span>Experience</span></a>
->>>>>>> Local
         </li>
 
         
@@ -321,33 +309,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/#experience"><span>Experience</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/talks"><span>Talks</span></a>
-=======
           <a class="nav-link " href="/#talks"><span>Talks</span></a>
->>>>>>> Local
         </li>
 
         
@@ -409,11 +371,6 @@
         
         
         
-<<<<<<< HEAD
-          
-        
-=======
->>>>>>> Local
 
         
         
@@ -423,11 +380,7 @@
         
 
         <li class="nav-item">
-<<<<<<< HEAD
-          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
-=======
           <a class="nav-link " href="/post"><span>Posts</span></a>
->>>>>>> Local
         </li>
 
         
@@ -447,22 +400,9 @@
         
         
         
-<<<<<<< HEAD
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
-=======
 
         <li class="nav-item">
           <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
->>>>>>> Local
         </li>
 
         
@@ -680,27 +620,6 @@
   <div class="article-container">
 
     <div class="article-style" itemprop="articleBody">
-<<<<<<< HEAD
-      
-
-<h2 id="background">Background</h2>
-
-<p>In Fall 2018, I joined <a href="http://cs.brown.edu/people/zr1/" target="_blank">Zhile Ren</a> and <a href="(https://www.cc.gatech.edu/~dellaert/FrankDellaert/Frank_Dellaert/Frank_Dellaert.html)" target="_blank">Frank Dellaert</a> on the <a href="https://sumochallenge.org" target="_blank">SUMO Challenge</a> by Facebook.</p>
-
-<p>The SUMO Challenge has several tracks for which we can compete for the best results, so our team decided to compete for the 3D Bounding Box track. That is, given 360 Degree RGB-Depth images, can we determine the 3D oriented bounding box for each of the items in the given scene?</p>
-
-<p>There are over 100 included object categories, with a pretty skewed distribution:
-<img src="/img/category_stats.png" alt="Sumo Categories" /></p>
-
-<h2 id="approaches">Approaches</h2>
-
-<p>At first, Zhile and I were determined to use direct 3D detection approaches like using <a href="http://cs.brown.edu/people/zr1/publications/cvpr2016/cvpr2016.pdf" target="_blank">Clouds of Oriented Gradients (CoG)</a>. However, the enormous size of the dataset (1+ Terrabyte) and image sizes (<code>1024 x 6144 x 3 channels</code>) immediately became problematic, both for training and inference.</p>
-
-<p>CoGs are great when the shape of the categories are easy to discern (i.e shapes that are not predominantly &ldquo;box-like&rdquo;), but in SUMO, we had many items that would have taken on very similar CoGs such as <code>single_bed</code> versus <code>double_bed</code>, <code>tv_stand</code> versus <code>dresser</code>, and so on.</p>
-
-<p>We decided a good starting point would be to determine object locations in the 2D space, and see where we could go from there. We intended to then train for CoGs, but we had limited time with the SUMO challenge deadline being mid-December, so we decided to see how well we could perform by using the following pipeline:</p>
-
-=======
       <h2 id="background">Background</h2>
 <p>In Fall 2018, I joined <a href="http://cs.brown.edu/people/zr1/">Zhile Ren</a> and <a href="(https://www.cc.gatech.edu/~dellaert/FrankDellaert/Frank_Dellaert/Frank_Dellaert.html)">Frank Dellaert</a> on the <a href="https://sumochallenge.org">SUMO Challenge</a> by Facebook.</p>
 <p>The SUMO Challenge has several tracks for which we can compete for the best results, so our team decided to compete for the 3D Bounding Box track. That is, given 360 Degree RGB-Depth images, can we determine the 3D oriented bounding box for each of the items in the given scene?</p>
@@ -710,45 +629,12 @@
 <p>At first, Zhile and I were determined to use direct 3D detection approaches like using <a href="http://cs.brown.edu/people/zr1/publications/cvpr2016/cvpr2016.pdf">Clouds of Oriented Gradients (CoG)</a>. However, the enormous size of the dataset (1+ Terrabyte) and image sizes (<code>1024 x 6144 x 3 channels</code>) immediately became problematic, both for training and inference.</p>
 <p>CoGs are great when the shape of the categories are easy to discern (i.e shapes that are not predominantly &ldquo;box-like&rdquo;), but in SUMO, we had many items that would have taken on very similar CoGs such as <code>single_bed</code> versus <code>double_bed</code>, <code>tv_stand</code> versus <code>dresser</code>, and so on.</p>
 <p>We decided a good starting point would be to determine object locations in the 2D space, and see where we could go from there. We intended to then train for CoGs, but we had limited time with the SUMO challenge deadline being mid-December, so we decided to see how well we could perform by using the following pipeline:</p>
->>>>>>> Local
 <ol>
 <li>Project 3D bounding boxes into 2D space to generate a 2D dataset</li>
 <li>Train a Faster-R-CNN network to detect objects on the 2D dataset</li>
 <li>Project the 2D coordinates back into 3D, do some simple post-processing to prevent things like walls and floors from being in the bounding box</li>
 <li>Train Regressors to help correct the coordinates on a per-category basis</li>
 </ol>
-<<<<<<< HEAD
-
-<h2 id="results">Results</h2>
-
-<p>On December 18th, we found out that the SUMO challege deadline would be pushed back to January 14th. We continued work on step <code>(3)</code> but didn&rsquo;t get very far in step <code>(4)</code>, so our final pipeline consists of steps <code>(1)</code> through <code>(3)</code>. We made our submission on Sunday, January 13th.</p>
-
-<p>We found out that we were narrowly beat by the Princeton Vision Lab for 1st place, leaving us in 2nd place for our cateogry.</p>
-
-<h2 id="visual-results-in-3d">Visual Results in 3D</h2>
-
-<p>Below are our results in the 3D space. On the left, we have a red bounding box, which is our detection. On the right in green we have the ground truth bounding boxes for that same scene.</p>
-
-<p><img src="/img/sumo/sumo_tv.png" alt="Detection of a television  with books in the tv stand" />
-<center> <strong>Figure 1:</strong> Detection of a <code>television</code>  with <code>books</code> in the tv stand. </center></p>
-
-<p><img src="/img/sumo/sumo_shower.png" alt="Detection of a shower" />
-<center> <strong>Figure 2:</strong> Detection of a <code>shower</code>. </center></p>
-
-<p><img src="/img/sumo/sumo_door.png" alt="Detection of a door" />
-<center> <strong>Figure 3:</strong> Detection of a <code>door</code>. </center></p>
-
-<h2 id="visual-results-in-2d">Visual Results in 2D</h2>
-
-<p>Below are some visual results we&rsquo;ve gotten in the 2D space training the Faster-R-CNN network.</p>
-
-<p><img src="/img/sumo/one.jpg" alt="Scene 1" />
-<img src="/img/sumo/two.jpg" alt="Scene 2" />
-<img src="/img/sumo/three.jpg" alt="Scene 3" />
-<img src="/img/sumo/four.jpg" alt="Scene 4" />
-<img src="/img/sumo/five.jpg" alt="Scene 5" /></p>
-
-=======
 <h2 id="results">Results</h2>
 <p>On December 18th, we found out that the SUMO challege deadline would be pushed back to January 14th. We continued work on step <code>(3)</code> but didn't get very far in step <code>(4)</code>, so our final pipeline consists of steps <code>(1)</code> through <code>(3)</code>. We made our submission on Sunday, January 13th.</p>
 <p>We found out that we were narrowly beat by the Princeton Vision Lab for 1st place, leaving us in 2nd place for our cateogry.</p>
@@ -767,7 +653,6 @@
 <img src="/img/sumo/three.jpg" alt="Scene 3">
 <img src="/img/sumo/four.jpg" alt="Scene 4">
 <img src="/img/sumo/five.jpg" alt="Scene 5"></p>
->>>>>>> Local
 <p>As you can see, the network performs fairly well. Mean AP was about <code>23%</code> which is reasonable given the enormous dataset size and the skewed distribution. One aspect that particularly complicates this challenge are the walls and floors, which are object categories, but the coordinates are often outside of single-frame views, which is exactly what this network was trained to perform on.</p>
 
     </div>
@@ -1014,11 +899,7 @@
   
 
   <p class="powered-by">
-<<<<<<< HEAD
-    Osama Sakhi &copy; 2019 &middot; 
-=======
     Osama Sakhi © 2019 &middot; 
->>>>>>> Local
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
