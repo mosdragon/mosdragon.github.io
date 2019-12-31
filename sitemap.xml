@@ -1,228 +1,228 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/teaching/intro_to_ai/</loc>
+    <loc>http://sakhi.es/teaching/intro_to_ai/</loc>
     <lastmod>2019-12-27T11:38:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/tip/</loc>
+    <loc>http://sakhi.es/teaching/tip/</loc>
     <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/tip/pathfinding/</loc>
+    <loc>http://sakhi.es/teaching/tip/pathfinding/</loc>
     <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/tip/ml/</loc>
+    <loc>http://sakhi.es/teaching/tip/ml/</loc>
     <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/tip/nlp/</loc>
+    <loc>http://sakhi.es/teaching/tip/nlp/</loc>
     <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
+    <loc>http://sakhi.es/tags/machine-learning/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/natural-language-processing/</loc>
+    <loc>http://sakhi.es/tags/natural-language-processing/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-12-30T00:52:33-05:00</lastmod>
+    <loc>http://sakhi.es/</loc>
+    <lastmod>2019-12-30T20:36:04-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>http://sakhi.es/project/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/research/</loc>
+    <loc>http://sakhi.es/tags/research/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/social-computing/</loc>
+    <loc>http://sakhi.es/tags/social-computing/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://sakhi.es/tags/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/reduce/</loc>
+    <loc>http://sakhi.es/project/reduce/</loc>
     <lastmod>2019-12-30T00:27:31-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/computer-vision/</loc>
+    <loc>http://sakhi.es/tags/computer-vision/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/crossdom/</loc>
+    <loc>http://sakhi.es/project/crossdom/</loc>
     <lastmod>2019-12-26T11:39:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/self-supervised-learning/</loc>
+    <loc>http://sakhi.es/tags/self-supervised-learning/</loc>
     <lastmod>2019-12-26T11:39:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/unsupervised-learning/</loc>
+    <loc>http://sakhi.es/tags/unsupervised-learning/</loc>
     <lastmod>2019-12-26T11:39:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/gans/</loc>
-    <lastmod>2019-12-30T00:27:31-05:00</lastmod>
+    <loc>http://sakhi.es/talk/gans/</loc>
+    <lastmod>2019-12-30T20:36:04-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/sumo/</loc>
+    <loc>http://sakhi.es/project/sumo/</loc>
     <lastmod>2019-09-03T01:09:32-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/hpc/</loc>
+    <loc>http://sakhi.es/project/hpc/</loc>
     <lastmod>2019-09-03T00:32:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hpc/</loc>
+    <loc>http://sakhi.es/tags/hpc/</loc>
     <lastmod>2019-09-03T00:32:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/ted/</loc>
+    <loc>http://sakhi.es/post/ted/</loc>
     <lastmod>2019-09-03T00:32:02-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
+    <loc>http://sakhi.es/authors/admin/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/3/</loc>
+    <loc>http://sakhi.es/publication_types/3/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>http://sakhi.es/authors/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/daniel-huber/</loc>
+    <loc>http://sakhi.es/authors/daniel-huber/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/frank-dellaert/</loc>
+    <loc>http://sakhi.es/authors/frank-dellaert/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ilke-demir/</loc>
+    <loc>http://sakhi.es/authors/ilke-demir/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jimmy-wu/</loc>
+    <loc>http://sakhi.es/authors/jimmy-wu/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/lyne-p.-tchapmi/</loc>
+    <loc>http://sakhi.es/authors/lyne-p.-tchapmi/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>http://sakhi.es/publication_types/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/richard-skarbez/</loc>
+    <loc>http://sakhi.es/authors/richard-skarbez/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/shuran-song/</loc>
+    <loc>http://sakhi.es/authors/shuran-song/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/silvio-savarese/</loc>
+    <loc>http://sakhi.es/authors/silvio-savarese/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/sumo/</loc>
+    <loc>http://sakhi.es/publication/sumo/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/thomas-funkhouser/</loc>
+    <loc>http://sakhi.es/authors/thomas-funkhouser/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/xingyuan-sun/</loc>
+    <loc>http://sakhi.es/authors/xingyuan-sun/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/zhile-ren/</loc>
+    <loc>http://sakhi.es/authors/zhile-ren/</loc>
     <lastmod>2019-12-30T00:52:33-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>http://sakhi.es/slides/</loc>
     <lastmod>2019-08-27T21:59:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>http://sakhi.es/slides/example/</loc>
     <lastmod>2019-08-27T21:59:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://sakhi.es/categories/</loc>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>http://sakhi.es/post/</loc>
     <lastmod>2019-08-27T21:59:43-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
+    <loc>http://sakhi.es/publication/</loc>
     <lastmod>2019-12-26T11:39:45-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>http://sakhi.es/talk/</loc>
     <lastmod>2019-12-29T23:35:22-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/</loc>
+    <loc>http://sakhi.es/teaching/</loc>
     <lastmod>2019-11-30T19:55:48-05:00</lastmod>
   </url>
   

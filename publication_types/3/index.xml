@@ -2,23 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3 | Osama Sakhi</title>
-    <link>/publication_types/3/</link>
-      <atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://sakhi.es/publication_types/3/</link>
+      <atom:link href="http://sakhi.es/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>http://sakhi.es/img/icon-192.png</url>
       <title>3</title>
-      <link>/publication_types/3/</link>
+      <link>http://sakhi.es/publication_types/3/</link>
     </image>
     
     <item>
       <title>Sumo</title>
-      <link>/publication/sumo/</link>
+      <link>http://sakhi.es/publication/sumo/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/sumo/</guid>
-      <description>&lt;h2 id=&#34;important&#34;&gt;IMPORTANT&lt;/h2&gt;
+      <guid>http://sakhi.es/publication/sumo/</guid>
+      <description>
+
+&lt;h2 id=&#34;important&#34;&gt;IMPORTANT&lt;/h2&gt;
+
 &lt;p&gt;This paper was being worked on until May 2019. At that time, the competition organizer, Facebook, faced a lawsuit for the creation of the dataset. To mitigate further risk of litigation, this paper was left unpublished and incomplete indefinitely.&lt;/p&gt;
+
 &lt;p&gt;The abstract presented above is from our working draft of the paper.&lt;/p&gt;
 </description>
     </item>

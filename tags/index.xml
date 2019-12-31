@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Osama Sakhi</title>
-    <link>/tags/</link>
-      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://sakhi.es/tags/</link>
+      <atom:link href="http://sakhi.es/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>http://sakhi.es/img/icon-192.png</url>
       <title>Tags</title>
-      <link>/tags/</link>
+      <link>http://sakhi.es/tags/</link>
     </image>
     
     <item>
       <title>machine learning</title>
-      <link>/tags/machine-learning/</link>
+      <link>http://sakhi.es/tags/machine-learning/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
+      <guid>http://sakhi.es/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>natural language processing</title>
-      <link>/tags/natural-language-processing/</link>
+      <link>http://sakhi.es/tags/natural-language-processing/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/natural-language-processing/</guid>
+      <guid>http://sakhi.es/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>research</title>
-      <link>/tags/research/</link>
+      <link>http://sakhi.es/tags/research/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/research/</guid>
+      <guid>http://sakhi.es/tags/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>social computing</title>
-      <link>/tags/social-computing/</link>
+      <link>http://sakhi.es/tags/social-computing/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/social-computing/</guid>
+      <guid>http://sakhi.es/tags/social-computing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>computer vision</title>
-      <link>/tags/computer-vision/</link>
+      <link>http://sakhi.es/tags/computer-vision/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/computer-vision/</guid>
+      <guid>http://sakhi.es/tags/computer-vision/</guid>
       <description></description>
     </item>
     
     <item>
       <title>self-supervised learning</title>
-      <link>/tags/self-supervised-learning/</link>
+      <link>http://sakhi.es/tags/self-supervised-learning/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/self-supervised-learning/</guid>
+      <guid>http://sakhi.es/tags/self-supervised-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>unsupervised learning</title>
-      <link>/tags/unsupervised-learning/</link>
+      <link>http://sakhi.es/tags/unsupervised-learning/</link>
       <pubDate>Sat, 30 Nov 2019 12:00:00 +0000</pubDate>
-      <guid>/tags/unsupervised-learning/</guid>
+      <guid>http://sakhi.es/tags/unsupervised-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hpc</title>
-      <link>/tags/hpc/</link>
+      <link>http://sakhi.es/tags/hpc/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/hpc/</guid>
+      <guid>http://sakhi.es/tags/hpc/</guid>
       <description></description>
     </item>
     

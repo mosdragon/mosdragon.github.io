@@ -2,49 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teaching | Osama Sakhi</title>
-    <link>/teaching/</link>
-      <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://sakhi.es/teaching/</link>
+      <atom:link href="http://sakhi.es/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teaching</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>http://sakhi.es/img/icon-192.png</url>
       <title>Teaching</title>
-      <link>/teaching/</link>
+      <link>http://sakhi.es/teaching/</link>
     </image>
     
     <item>
       <title>Introduction to Artificial Intelligence</title>
-      <link>/teaching/intro_to_ai/</link>
+      <link>http://sakhi.es/teaching/intro_to_ai/</link>
       <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/teaching/intro_to_ai/</guid>
-      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+      <guid>http://sakhi.es/teaching/intro_to_ai/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
 &lt;p&gt;I first took &lt;em&gt;CS3600: Introduction to Artificial Intelligence&lt;/em&gt; in Fall 2015. In
 Fall 2016, I decided I wanted to TA for the course, and that was my first term
 as a TA. Being a new TA, I was still getting the hang of the material, being
 able to explain content in my own words, and help student debug all sorts of
 issues.&lt;/p&gt;
-&lt;p&gt;In Spring 2019, during my Master&#39;s program, I decided to TA for the course
+
+&lt;p&gt;In Spring 2019, during my Master&amp;rsquo;s program, I decided to TA for the course
 again. This time, I had graduate-level experience in some of these topics such
 as Machine Learning, so I went in with much more confidence ready to help
 students grasp the material.&lt;/p&gt;
+
 &lt;p&gt;Finally, in Fall 2019, I was chosen to be the Head TA for the course, which now
 had two sections with a total of 450+ students and 18 TAs.&lt;/p&gt;
+
 &lt;h2 id=&#34;mass-autograder-system&#34;&gt;Mass Autograder System&lt;/h2&gt;
+
 &lt;p&gt;During my term as a Head TA, one of the biggest challenges I faced was the issue
 of grading projects. With the number of students we had and the pace of the
-course, we simply couldn&#39;t expect that all TAs would be able to grade a large
+course, we simply couldn&amp;rsquo;t expect that all TAs would be able to grade a large
 block of students manually with only a few days notice, nor could we expect
 students to wait 3+ weeks to get feedback on their submissions.&lt;/p&gt;
+
 &lt;p&gt;Although the projects we used for the course already came
 with test cases for students to validate their implementations, as TAs we still
-had to run our own tests to ensure that students didn&#39;t trivialize the
+had to run our own tests to ensure that students didn&amp;rsquo;t trivialize the
 assignment by using functions or libraries we explicitly forbid. Additionally,
-we also wanted to run plagiarism detectors to ensure students didn&#39;t use code
+we also wanted to run plagiarism detectors to ensure students didn&amp;rsquo;t use code
 they found off of the internet.&lt;/p&gt;
+
 &lt;p&gt;The previous solution we had for doing this in bits in pieces had a number of
 major issues:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Brittle&lt;/strong&gt;: it was unable to handle submissions that weren&#39;t in the &lt;em&gt;exact&lt;/em&gt;
+&lt;li&gt;&lt;strong&gt;Brittle&lt;/strong&gt;: it was unable to handle submissions that weren&amp;rsquo;t in the &lt;em&gt;exact&lt;/em&gt;
 submission file hierarchy the assignment requested, even if all of the
 necessary source files were submitted.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Unreliable&lt;/strong&gt;: Sometimes the library would just not be able to handle
@@ -54,10 +64,12 @@ have to be identified and regraded manually.&lt;/li&gt;
 a TA would have to manually go in an enter those grades in the gradebook, all
 450+ of them.&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;I decided it would be worth the time to create a new solution that would remedy
 all of these issues and would be easy enough for future Head TAs to run without
 any issues. Here are some of the key highlights of the implementation I completed the
 first three weeks into the semester:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Automatic exporting of grades to the full gradebook&lt;/li&gt;
 &lt;li&gt;Support for submissions with variations on the file hierarchies&lt;/li&gt;
@@ -65,41 +77,50 @@ first three weeks into the semester:&lt;/p&gt;
 &lt;li&gt;Improved plagiarism detection&lt;/li&gt;
 &lt;li&gt;Extensive logging to ensure TAs can catch issues early on&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;project-review-sessions&#34;&gt;Project Review Sessions&lt;/h2&gt;
-&lt;p&gt;Although this course doesn&#39;t have formal recitations, the TAs for this course
+
+&lt;p&gt;Although this course doesn&amp;rsquo;t have formal recitations, the TAs for this course
 have typically taken it upon themselves to lead several review sessions
 throughout the semester for students to hear the material delivered at a slower
 pace by their peers as well as ask any questions they may have on course
 concepts. These sessions were mainly geared towards preparing students for the
 upcoming projects since they were such a large portion of the students&amp;rsquo; grades.&lt;/p&gt;
+
 &lt;p&gt;In previous semesters, the TAs had typically explained concepts verbally, with a
-bit of psuedocode given for common algorithms such as Djikstra&#39;s Algorithm or the
+bit of psuedocode given for common algorithms such as Djikstra&amp;rsquo;s Algorithm or the
 Bellman Update Equation, however I had always felt as though students were able
 to implement these in the projects and get by in the course without having a
 firm understanding of why they worked. Many students struggled heavily on the
 exams in those same concepts that they glossed over since they could implement
 the projects without that understanding.&lt;/p&gt;
+
 &lt;p&gt;To remedy this, I decided to create extensive review guides for the review
 sessions that could be used long after I had left Georgia Tech. With a handful
 of other TAs, we managed to produce well over 30 pages total of explanations of
 core concepts for the course.&lt;/p&gt;
+
 &lt;p&gt;Here are the review guides we created:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;project1.pdf&#34;&gt;Graph Search Algorithms&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;project2.pdf&#34;&gt;Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;project3.pdf&#34;&gt;Probabilitic Inference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;project4b.pdf&#34;&gt;Neural Networks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;project4a.pdf&#34;&gt;Decision Trees&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project1.pdf&#34; target=&#34;_blank&#34;&gt;Graph Search Algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project2.pdf&#34; target=&#34;_blank&#34;&gt;Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project3.pdf&#34; target=&#34;_blank&#34;&gt;Probabilitic Inference&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project4b.pdf&#34; target=&#34;_blank&#34;&gt;Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;project4a.pdf&#34; target=&#34;_blank&#34;&gt;Decision Trees&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;p&gt;In addition, these TAs and I led the hour-long review sessions for the projects
 where we presented this material to our students. Sessions typically had 30-40
 students, and we addressed questions with illustrations, equations, or any other
 means of getting the students to understand the material.&lt;/p&gt;
+
 &lt;h2 id=&#34;reflections&#34;&gt;Reflections&lt;/h2&gt;
+
 &lt;p&gt;It was a true honor and privilege to be the Head TA for this course. Not only
 did having so many students push me to refine my own understanding of even the
 subtle edge cases, but it also gave me the opportunity to bring what I have
-always felt were some very necessary changes to the course. I&#39;m hopeful that the
+always felt were some very necessary changes to the course. I&amp;rsquo;m hopeful that the
 students were able to reap all of the benefits of these changes and that it
 truly inspires them to pursue research and careers in Artificial Intelligence.&lt;/p&gt;
 </description>
@@ -107,26 +128,41 @@ truly inspires them to pursue research and careers in Artificial Intelligence.&l
     
     <item>
       <title>Duke TIP AI 2018</title>
-      <link>/teaching/tip/</link>
+      <link>http://sakhi.es/teaching/tip/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>/teaching/tip/</guid>
-      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
-&lt;p&gt;From June 2017 to June 2018, I worked as a Full-Time Software Engineer. I was all set to leave work at the end of the summer and return to Georgia Tech as a full-time Master&#39;s Student for the Fall 2018 semester, but I suddenly got offered this unique opportunity by &lt;a href=&#34;https://tip.duke.edu/&#34;&gt;Duke TIP&lt;/a&gt; to teaching high schoolers Programming and AI. I &lt;em&gt;jumped&lt;/em&gt; at the opportunity. Friday June 22nd, 2018 was my last day as an engineer, and Saturday morning on June 23rd I was already flying out to Houson for Rice University.&lt;/p&gt;
+      <guid>http://sakhi.es/teaching/tip/</guid>
+      <description>
+
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;From June 2017 to June 2018, I worked as a Full-Time Software Engineer. I was all set to leave work at the end of the summer and return to Georgia Tech as a full-time Master&amp;rsquo;s Student for the Fall 2018 semester, but I suddenly got offered this unique opportunity by &lt;a href=&#34;https://tip.duke.edu/&#34; target=&#34;_blank&#34;&gt;Duke TIP&lt;/a&gt; to teaching high schoolers Programming and AI. I &lt;em&gt;jumped&lt;/em&gt; at the opportunity. Friday June 22nd, 2018 was my last day as an engineer, and Saturday morning on June 23rd I was already flying out to Houson for Rice University.&lt;/p&gt;
+
 &lt;p&gt;The next four weeks, I taught 2 classes:&lt;/p&gt;
+
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/applications-algorithms-computers-modern-programming-0&#34;&gt;Applications, Algorithms, Computers: Modern Programming&lt;/a&gt; @ Rice University&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/artificial-intelligence-0&#34;&gt;Artificial Intelligence&lt;/a&gt; @ Georgia Tech&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/applications-algorithms-computers-modern-programming-0&#34; target=&#34;_blank&#34;&gt;Applications, Algorithms, Computers: Modern Programming&lt;/a&gt; @ Rice University&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://tip.duke.edu/programs/summer-studies/courses/artificial-intelligence-0&#34; target=&#34;_blank&#34;&gt;Artificial Intelligence&lt;/a&gt; @ Georgia Tech&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;h2 id=&#34;phase-i&#34;&gt;Phase I&lt;/h2&gt;
-&lt;p&gt;The first class, I was a temp hire &amp;ndash; I was only there for the final week, since the previous instructor for the course was unable to teach that final week of the program. So, I was responsible for making sure these 18 students understood Python well enough that in just 5 days, I could teach them the basics of Web Development, and by the end of the week, each student would have used the &lt;a href=&#34;http://flask.pocoo.org&#34;&gt;Flask&lt;/a&gt; framework to make a really simple Twitter clone. Despite my limited time with the students, this was an overwhelming success.&lt;/p&gt;
+
+&lt;p&gt;The first class, I was a temp hire &amp;ndash; I was only there for the final week, since the previous instructor for the course was unable to teach that final week of the program. So, I was responsible for making sure these 18 students understood Python well enough that in just 5 days, I could teach them the basics of Web Development, and by the end of the week, each student would have used the &lt;a href=&#34;http://flask.pocoo.org&#34; target=&#34;_blank&#34;&gt;Flask&lt;/a&gt; framework to make a really simple Twitter clone. Despite my limited time with the students, this was an overwhelming success.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;The true hero was my Teaching Assistant, Noah Spiner&lt;/strong&gt;, who held the class together all three weeks and made my transition into the classroom with these new kids a smooth one.&lt;/p&gt;
-&lt;p&gt;Just 7 days after my arrival there, it was time to say goodbye. I had parent-teacher conferences with each of my students&amp;rsquo; parents. It was a wonderful experience &amp;ndash; my students genuinely felt that I&#39;d impacted them in that short 1-week we were here together, and parents loved how I&#39;d manaded to inspire their kids.&lt;/p&gt;
+
+&lt;p&gt;Just 7 days after my arrival there, it was time to say goodbye. I had parent-teacher conferences with each of my students&amp;rsquo; parents. It was a wonderful experience &amp;ndash; my students genuinely felt that I&amp;rsquo;d impacted them in that short 1-week we were here together, and parents loved how I&amp;rsquo;d manaded to inspire their kids.&lt;/p&gt;
+
 &lt;h2 id=&#34;phase-ii&#34;&gt;Phase II&lt;/h2&gt;
+
 &lt;p&gt;This is the part of the teaching experience I was &lt;em&gt;really&lt;/em&gt; psyched about &amp;ndash; the chance to teach high schoolers AI! I was tasked with crafting the curriculum end-to-end, including crafting syllabi, conducting lectures, creating assignments.&lt;/p&gt;
-&lt;p&gt;You can see my syllabus &lt;a href=&#34;/files/duke_syllabus.pdf&#34;&gt;here&lt;/a&gt;. It offered a mix of the serious topics (Fundamentals of Python, Graph Search, Machine Learning, Natural Language Processing) and fun games and activities the class really enjoyed (Bot or Not?, Jeopardy Review sessions, AI Rap Battle, Robotics Lab Field Trip).&lt;/p&gt;
-&lt;p&gt;Three whole weeks somehow flew by, and I could see from the looks on my students&amp;rsquo; faces that they felt the impact of my teaching. This was worth it all. This was worth the additional 2-3 hours I&#39;d spend nightly preparing material for the next day, this was worth having to overcome my fear of standing in front of crowds, and this was definitely worth forgoing the additional month of full-time work experience I could&#39;ve had instead.&lt;/p&gt;
+
+&lt;p&gt;You can see my syllabus &lt;a href=&#34;http://sakhi.es/files/duke_syllabus.pdf&#34;&gt;here&lt;/a&gt;. It offered a mix of the serious topics (Fundamentals of Python, Graph Search, Machine Learning, Natural Language Processing) and fun games and activities the class really enjoyed (Bot or Not?, Jeopardy Review sessions, AI Rap Battle, Robotics Lab Field Trip).&lt;/p&gt;
+
+&lt;p&gt;Three whole weeks somehow flew by, and I could see from the looks on my students&amp;rsquo; faces that they felt the impact of my teaching. This was worth it all. This was worth the additional 2-3 hours I&amp;rsquo;d spend nightly preparing material for the next day, this was worth having to overcome my fear of standing in front of crowds, and this was definitely worth forgoing the additional month of full-time work experience I could&amp;rsquo;ve had instead.&lt;/p&gt;
+
 &lt;h2 id=&#34;syllabus&#34;&gt;Syllabus&lt;/h2&gt;
-&lt;p&gt;I&#39;ve published the &lt;a href=&#34;/files/duke_syllabus.pdf&#34;&gt;syllabus&lt;/a&gt; here for you to use to create your own AI course. If you find any of the resources here to be helpful in teaching, I would love to hear about it! Feel free to &lt;a href=&#34;mailto:msakhi21@gmail.com&#34;&gt;email me&lt;/a&gt; about your experiences with the curriculum.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve published the &lt;a href=&#34;http://sakhi.es/files/duke_syllabus.pdf&#34;&gt;syllabus&lt;/a&gt; here for you to use to create your own AI course. If you find any of the resources here to be helpful in teaching, I would love to hear about it! Feel free to &lt;a href=&#34;mailto:msakhi21@gmail.com&#34; target=&#34;_blank&#34;&gt;email me&lt;/a&gt; about your experiences with the curriculum.&lt;/p&gt;
 </description>
     </item>
     

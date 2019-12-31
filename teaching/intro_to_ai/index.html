@@ -31,7 +31,7 @@
   <meta name="description" content="I served as the Head Teaching Assistant for CS3600 at Georgia Tech in Fall 2019. I was also a TA for the course in Fall 2016 and Spring 2019.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/teaching/intro_to_ai/">
+  <link rel="alternate" hreflang="en-us" href="http://sakhi.es/teaching/intro_to_ai/">
 
   
 
@@ -80,7 +80,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.a86f84713e8e0b50995bbbfc63def9b9.css">
+  <link rel="stylesheet" href="/css/academic.min.4331393f6c89fd0733fb7e97976faae8.css">
 
   
 
@@ -110,7 +110,7 @@
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/teaching/intro_to_ai/">
+  <link rel="canonical" href="http://sakhi.es/teaching/intro_to_ai/">
 
   
   
@@ -123,10 +123,10 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Osama Sakhi">
-  <meta property="og:url" content="/teaching/intro_to_ai/">
+  <meta property="og:url" content="http://sakhi.es/teaching/intro_to_ai/">
   <meta property="og:title" content="Introduction to Artificial Intelligence | Osama Sakhi">
-  <meta property="og:description" content="I served as the Head Teaching Assistant for CS3600 at Georgia Tech in Fall 2019. I was also a TA for the course in Fall 2016 and Spring 2019."><meta property="og:image" content="/img/icon-192.png">
-  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="I served as the Head Teaching Assistant for CS3600 at Georgia Tech in Fall 2019. I was also a TA for the course in Fall 2016 and Spring 2019."><meta property="og:image" content="http://sakhi.es/img/icon-192.png">
+  <meta property="twitter:image" content="http://sakhi.es/img/icon-192.png"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2019-12-27T00:00:00&#43;00:00">
   
@@ -473,12 +473,15 @@
       </ul>
 
       <nav id="TableOfContents">
-  <ul>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#mass-autograder-system">Mass Autograder System</a></li>
-    <li><a href="#project-review-sessions">Project Review Sessions</a></li>
-    <li><a href="#reflections">Reflections</a></li>
-  </ul>
+<ul>
+<li>
+<ul>
+<li><a href="#background">Background</a></li>
+<li><a href="#mass-autograder-system">Mass Autograder System</a></li>
+<li><a href="#project-review-sessions">Project Review Sessions</a></li>
+<li><a href="#reflections">Reflections</a></li>
+</ul></li>
+</ul>
 </nav>
 
       
@@ -493,34 +496,44 @@
           <h1 itemprop="name">Introduction to Artificial Intelligence</h1>
 
           <div class="article-style" itemprop="articleBody">
-            <h2 id="background">Background</h2>
+            
+
+<h2 id="background">Background</h2>
+
 <p>I first took <em>CS3600: Introduction to Artificial Intelligence</em> in Fall 2015. In
 Fall 2016, I decided I wanted to TA for the course, and that was my first term
 as a TA. Being a new TA, I was still getting the hang of the material, being
 able to explain content in my own words, and help student debug all sorts of
 issues.</p>
-<p>In Spring 2019, during my Master's program, I decided to TA for the course
+
+<p>In Spring 2019, during my Master&rsquo;s program, I decided to TA for the course
 again. This time, I had graduate-level experience in some of these topics such
 as Machine Learning, so I went in with much more confidence ready to help
 students grasp the material.</p>
+
 <p>Finally, in Fall 2019, I was chosen to be the Head TA for the course, which now
 had two sections with a total of 450+ students and 18 TAs.</p>
+
 <h2 id="mass-autograder-system">Mass Autograder System</h2>
+
 <p>During my term as a Head TA, one of the biggest challenges I faced was the issue
 of grading projects. With the number of students we had and the pace of the
-course, we simply couldn't expect that all TAs would be able to grade a large
+course, we simply couldn&rsquo;t expect that all TAs would be able to grade a large
 block of students manually with only a few days notice, nor could we expect
 students to wait 3+ weeks to get feedback on their submissions.</p>
+
 <p>Although the projects we used for the course already came
 with test cases for students to validate their implementations, as TAs we still
-had to run our own tests to ensure that students didn't trivialize the
+had to run our own tests to ensure that students didn&rsquo;t trivialize the
 assignment by using functions or libraries we explicitly forbid. Additionally,
-we also wanted to run plagiarism detectors to ensure students didn't use code
+we also wanted to run plagiarism detectors to ensure students didn&rsquo;t use code
 they found off of the internet.</p>
+
 <p>The previous solution we had for doing this in bits in pieces had a number of
 major issues:</p>
+
 <ul>
-<li><strong>Brittle</strong>: it was unable to handle submissions that weren't in the <em>exact</em>
+<li><strong>Brittle</strong>: it was unable to handle submissions that weren&rsquo;t in the <em>exact</em>
 submission file hierarchy the assignment requested, even if all of the
 necessary source files were submitted.</li>
 <li><strong>Unreliable</strong>: Sometimes the library would just not be able to handle
@@ -530,10 +543,12 @@ have to be identified and regraded manually.</li>
 a TA would have to manually go in an enter those grades in the gradebook, all
 450+ of them.</li>
 </ul>
+
 <p>I decided it would be worth the time to create a new solution that would remedy
 all of these issues and would be easy enough for future Head TAs to run without
 any issues. Here are some of the key highlights of the implementation I completed the
 first three weeks into the semester:</p>
+
 <ul>
 <li>Automatic exporting of grades to the full gradebook</li>
 <li>Support for submissions with variations on the file hierarchies</li>
@@ -541,41 +556,50 @@ first three weeks into the semester:</p>
 <li>Improved plagiarism detection</li>
 <li>Extensive logging to ensure TAs can catch issues early on</li>
 </ul>
+
 <h2 id="project-review-sessions">Project Review Sessions</h2>
-<p>Although this course doesn't have formal recitations, the TAs for this course
+
+<p>Although this course doesn&rsquo;t have formal recitations, the TAs for this course
 have typically taken it upon themselves to lead several review sessions
 throughout the semester for students to hear the material delivered at a slower
 pace by their peers as well as ask any questions they may have on course
 concepts. These sessions were mainly geared towards preparing students for the
 upcoming projects since they were such a large portion of the students&rsquo; grades.</p>
+
 <p>In previous semesters, the TAs had typically explained concepts verbally, with a
-bit of psuedocode given for common algorithms such as Djikstra's Algorithm or the
+bit of psuedocode given for common algorithms such as Djikstra&rsquo;s Algorithm or the
 Bellman Update Equation, however I had always felt as though students were able
 to implement these in the projects and get by in the course without having a
 firm understanding of why they worked. Many students struggled heavily on the
 exams in those same concepts that they glossed over since they could implement
 the projects without that understanding.</p>
+
 <p>To remedy this, I decided to create extensive review guides for the review
 sessions that could be used long after I had left Georgia Tech. With a handful
 of other TAs, we managed to produce well over 30 pages total of explanations of
 core concepts for the course.</p>
+
 <p>Here are the review guides we created:</p>
+
 <ul>
-<li><a href="project1.pdf">Graph Search Algorithms</a></li>
-<li><a href="project2.pdf">Reinforcement Learning</a></li>
-<li><a href="project3.pdf">Probabilitic Inference</a></li>
-<li><a href="project4b.pdf">Neural Networks</a></li>
-<li><a href="project4a.pdf">Decision Trees</a></li>
+<li><a href="project1.pdf" target="_blank">Graph Search Algorithms</a></li>
+<li><a href="project2.pdf" target="_blank">Reinforcement Learning</a></li>
+<li><a href="project3.pdf" target="_blank">Probabilitic Inference</a></li>
+<li><a href="project4b.pdf" target="_blank">Neural Networks</a></li>
+<li><a href="project4a.pdf" target="_blank">Decision Trees</a></li>
 </ul>
+
 <p>In addition, these TAs and I led the hour-long review sessions for the projects
 where we presented this material to our students. Sessions typically had 30-40
 students, and we addressed questions with illustrations, equations, or any other
 means of getting the students to understand the material.</p>
+
 <h2 id="reflections">Reflections</h2>
+
 <p>It was a true honor and privilege to be the Head TA for this course. Not only
 did having so many students push me to refine my own understanding of even the
 subtle edge cases, but it also gave me the opportunity to bring what I have
-always felt were some very necessary changes to the course. I'm hopeful that the
+always felt were some very necessary changes to the course. I&rsquo;m hopeful that the
 students were able to reap all of the benefits of these changes and that it
 truly inspires them to pursue research and careers in Artificial Intelligence.</p>
 
@@ -613,7 +637,7 @@ truly inspires them to pursue research and careers in Artificial Intelligence.</
   
 
   <p class="powered-by">
-    Osama Sakhi © 2019 &middot; 
+    Osama Sakhi &copy; 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
