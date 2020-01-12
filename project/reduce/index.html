@@ -126,7 +126,7 @@
   <meta property="twitter:image" content="http://sakhi.es/project/reduce/featured.jpg"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-12-30T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-01-10T00:00:00&#43;00:00">
     
     <meta property="article:modified_time" content="2019-12-30T00:27:31-05:00">
   
@@ -470,8 +470,8 @@
 
 
 
-<meta content="2019-12-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-12-30 00:27:31 -0500 EST" itemprop="dateModified">
+<meta content="2020-01-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-12-30 00:27:31 -0500 -0500" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -628,17 +628,40 @@
 
 <p>The <a href="https://socweb.cc.gatech.edu/projects/" target="_blank">REDUCE</a> project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&rsquo;ve partnered with the CDC to use historical trends with social media data to forecast future trends week-to-week.</p>
 
-<p>One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &ndash; nearly instantly. In contrast, the CDC data we get will be a minimum of two years old because of all of the aggregation efforts needed by the CDC to publish this data.</p>
+<p>One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &ndash; instantly. In contrast, the ground-truth suicide trend data takes nearly two years for the CDC to aggregate and publish, which presents problems for real-time estimation of suicide trends.</p>
 
-<h2 id="approach">Approach</h2>
+<p>For my role in this project, I&rsquo;ve primarily worked on extracting meaninful signals from social media data we&rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide collected for a 3 year timespan.</p>
 
-<p>For my role in this project, I&rsquo;ve primarily worked on extracting meaninful signals from the social media data. Most of my time has been spent on the Twitter data we have, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide.</p>
+<p>I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features <code>X</code> with the target variable <code>y</code> being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this <code>y</code> fairly accurately. This regression model would then serve as one learner in a final ensemble approach which uses models built separately on data from other sources such as CDC suicide data, Google Health data, Reddit language model data, etc.</p>
 
-<p>With the tweets, I have built various embeddings for each tweet. These embeddings are aggregated in various ways to produce a representation for a week&rsquo;s worth of tweets at a time, and that representation is then fed into various regressors. The best trained regressor will be used as one learner in our final ensemble approach, which will consist of learners for the other data sources we have, such as CDC suicide data, Google Health data, Reddit language model data, etc.</p>
+<h2 id="approaches">Approaches</h2>
+
+<h3 id="lexicographical-inquiry-and-word-count-bag-of-words">Lexicographical Inquiry and Word Count + Bag of Words</h3>
+
+<p>For each tweet, we wanted to create a high dimensional tensor that would represent the contents of this tweet entirely. We decided to use both a Bag-of-Words embedding along with the LIWC scores as the embedding for each tweet.</p>
+
+<p>With the Bag of Words model, we tried several &ldquo;flavors&rdquo; to see what would work best to create our vocabulary and embeddings:</p>
+
+<ul>
+<li><code>vanilla</code> - Using the top 10k words in the corpus</li>
+<li><code>deslang</code> - Using the top 10k words in the corpus after internet slang words were expanded.
+
+<ul>
+<li>Ex: In our tweets, the phrase <code>iykyk</code> would be expanded into the five words <code>if you know you know</code></li>
+</ul></li>
+<li><code>stopwords</code> - Removal of the top english stopwords before keeping the top 10 words</li>
+<li><code>deslang_stopwords</code> - A combination of the approaches for <code>deslang</code> and <code>stopwords</code></li>
+</ul>
+
+<h3 id="document-embeddings">Document Embeddings</h3>
+
+<p>This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or simply sarcasm.</p>
+
+<p>To see if this limitation has any effect on the final models used to help predict suicide trends, we are looking into embeddings that are designed to capture document-level patterns. These embeddings can capture much more complex semantic relationships which could be invaluable in our task. Some of the models we&rsquo;re looking at right now include <em>doc2vec</em> and <em>SBERT</em>.</p>
 
 <h2 id="results">Results</h2>
 
-<p>This project is ongoing, so we don&rsquo;t have much to report just yet. What we can say, however, is that the models built from the tweets seems to be very capable in our initial results. For one of our models, we found that the representation of tweets at a weekly granularity produced a model that performed nearly as well as the models built with just historical data (which is limited and is only available every 2 years).</p>
+<p>This project is ongoing, so we don&rsquo;t have concrete numbers to publish here at this time. However, we have found that the regression models built off of some of the Bag-of-Words embeddings, particularly the <code>stopwords</code> and <code>deslang_stopwords</code> flavors, have shown promising results already, comparable to those we&rsquo;re seeing from ground-truth suicide trend data.</p>
 
     </div>
 

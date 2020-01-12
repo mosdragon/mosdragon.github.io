@@ -5,7 +5,7 @@
     <link>http://sakhi.es/tags/research/</link>
       <atom:link href="http://sakhi.es/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <description>research</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Fri, 10 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://sakhi.es/img/icon-192.png</url>
       <title>research</title>
@@ -15,7 +15,7 @@
     <item>
       <title>The REDUCE Project</title>
       <link>http://sakhi.es/project/reduce/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://sakhi.es/project/reduce/</guid>
       <description>
 
@@ -23,17 +23,40 @@
 
 &lt;p&gt;The &lt;a href=&#34;https://socweb.cc.gatech.edu/projects/&#34; target=&#34;_blank&#34;&gt;REDUCE&lt;/a&gt; project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&amp;rsquo;ve partnered with the CDC to use historical trends with social media data to forecast future trends week-to-week.&lt;/p&gt;
 
-&lt;p&gt;One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &amp;ndash; nearly instantly. In contrast, the CDC data we get will be a minimum of two years old because of all of the aggregation efforts needed by the CDC to publish this data.&lt;/p&gt;
+&lt;p&gt;One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &amp;ndash; instantly. In contrast, the ground-truth suicide trend data takes nearly two years for the CDC to aggregate and publish, which presents problems for real-time estimation of suicide trends.&lt;/p&gt;
 
-&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+&lt;p&gt;For my role in this project, I&amp;rsquo;ve primarily worked on extracting meaninful signals from social media data we&amp;rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide collected for a 3 year timespan.&lt;/p&gt;
 
-&lt;p&gt;For my role in this project, I&amp;rsquo;ve primarily worked on extracting meaninful signals from the social media data. Most of my time has been spent on the Twitter data we have, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide.&lt;/p&gt;
+&lt;p&gt;I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features &lt;code&gt;X&lt;/code&gt; with the target variable &lt;code&gt;y&lt;/code&gt; being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this &lt;code&gt;y&lt;/code&gt; fairly accurately. This regression model would then serve as one learner in a final ensemble approach which uses models built separately on data from other sources such as CDC suicide data, Google Health data, Reddit language model data, etc.&lt;/p&gt;
 
-&lt;p&gt;With the tweets, I have built various embeddings for each tweet. These embeddings are aggregated in various ways to produce a representation for a week&amp;rsquo;s worth of tweets at a time, and that representation is then fed into various regressors. The best trained regressor will be used as one learner in our final ensemble approach, which will consist of learners for the other data sources we have, such as CDC suicide data, Google Health data, Reddit language model data, etc.&lt;/p&gt;
+&lt;h2 id=&#34;approaches&#34;&gt;Approaches&lt;/h2&gt;
+
+&lt;h3 id=&#34;lexicographical-inquiry-and-word-count-bag-of-words&#34;&gt;Lexicographical Inquiry and Word Count + Bag of Words&lt;/h3&gt;
+
+&lt;p&gt;For each tweet, we wanted to create a high dimensional tensor that would represent the contents of this tweet entirely. We decided to use both a Bag-of-Words embedding along with the LIWC scores as the embedding for each tweet.&lt;/p&gt;
+
+&lt;p&gt;With the Bag of Words model, we tried several &amp;ldquo;flavors&amp;rdquo; to see what would work best to create our vocabulary and embeddings:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;vanilla&lt;/code&gt; - Using the top 10k words in the corpus&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deslang&lt;/code&gt; - Using the top 10k words in the corpus after internet slang words were expanded.
+
+&lt;ul&gt;
+&lt;li&gt;Ex: In our tweets, the phrase &lt;code&gt;iykyk&lt;/code&gt; would be expanded into the five words &lt;code&gt;if you know you know&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stopwords&lt;/code&gt; - Removal of the top english stopwords before keeping the top 10 words&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;deslang_stopwords&lt;/code&gt; - A combination of the approaches for &lt;code&gt;deslang&lt;/code&gt; and &lt;code&gt;stopwords&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;document-embeddings&#34;&gt;Document Embeddings&lt;/h3&gt;
+
+&lt;p&gt;This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&amp;rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or simply sarcasm.&lt;/p&gt;
+
+&lt;p&gt;To see if this limitation has any effect on the final models used to help predict suicide trends, we are looking into embeddings that are designed to capture document-level patterns. These embeddings can capture much more complex semantic relationships which could be invaluable in our task. Some of the models we&amp;rsquo;re looking at right now include &lt;em&gt;doc2vec&lt;/em&gt; and &lt;em&gt;SBERT&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 
-&lt;p&gt;This project is ongoing, so we don&amp;rsquo;t have much to report just yet. What we can say, however, is that the models built from the tweets seems to be very capable in our initial results. For one of our models, we found that the representation of tweets at a weekly granularity produced a model that performed nearly as well as the models built with just historical data (which is limited and is only available every 2 years).&lt;/p&gt;
+&lt;p&gt;This project is ongoing, so we don&amp;rsquo;t have concrete numbers to publish here at this time. However, we have found that the regression models built off of some of the Bag-of-Words embeddings, particularly the &lt;code&gt;stopwords&lt;/code&gt; and &lt;code&gt;deslang_stopwords&lt;/code&gt; flavors, have shown promising results already, comparable to those we&amp;rsquo;re seeing from ground-truth suicide trend data.&lt;/p&gt;
 </description>
     </item>
     

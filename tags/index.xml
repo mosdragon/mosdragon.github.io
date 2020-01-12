@@ -5,7 +5,7 @@
     <link>http://sakhi.es/tags/</link>
       <atom:link href="http://sakhi.es/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>Osama Sakhi © 2019</copyright><lastBuildDate>Fri, 10 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://sakhi.es/img/icon-192.png</url>
       <title>Tags</title>
@@ -15,7 +15,7 @@
     <item>
       <title>machine learning</title>
       <link>http://sakhi.es/tags/machine-learning/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://sakhi.es/tags/machine-learning/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>natural language processing</title>
       <link>http://sakhi.es/tags/natural-language-processing/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://sakhi.es/tags/natural-language-processing/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>research</title>
       <link>http://sakhi.es/tags/research/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://sakhi.es/tags/research/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>social computing</title>
       <link>http://sakhi.es/tags/social-computing/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://sakhi.es/tags/social-computing/</guid>
       <description></description>
     </item>
