@@ -21,13 +21,13 @@
 
 &lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
 
-&lt;p&gt;The &lt;a href=&#34;https://socweb.cc.gatech.edu/projects/&#34; target=&#34;_blank&#34;&gt;REDUCE&lt;/a&gt; project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&amp;rsquo;ve partnered with the CDC to use historical trends with social media data to forecast future trends week-to-week.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://socweb.cc.gatech.edu/projects/&#34; target=&#34;_blank&#34;&gt;REDUCE&lt;/a&gt; project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&amp;rsquo;ve partnered with the CDC to use historical trends with other signals such as social media data to forecast suicide trends week-to-week.&lt;/p&gt;
 
 &lt;p&gt;One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &amp;ndash; instantly. In contrast, the ground-truth suicide trend data takes nearly two years for the CDC to aggregate and publish, which presents problems for real-time estimation of suicide trends.&lt;/p&gt;
 
-&lt;p&gt;For my role in this project, I&amp;rsquo;ve primarily worked on extracting meaninful signals from social media data we&amp;rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide collected for a 3 year timespan.&lt;/p&gt;
+&lt;p&gt;For my role in this project, I&amp;rsquo;ve primarily worked on extracting meaninful signals from the social media data we&amp;rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which has over 63 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide.&lt;/p&gt;
 
-&lt;p&gt;I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features &lt;code&gt;X&lt;/code&gt; with the target variable &lt;code&gt;y&lt;/code&gt; being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this &lt;code&gt;y&lt;/code&gt; fairly accurately. This regression model would then serve as one learner in a final ensemble approach which uses models built separately on data from other sources such as CDC suicide data, Google Health data, Reddit language model data, etc.&lt;/p&gt;
+&lt;p&gt;I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features &lt;code&gt;X&lt;/code&gt; with the target variable &lt;code&gt;y&lt;/code&gt; being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this &lt;code&gt;y&lt;/code&gt; fairly accurately. This regression model would then serve as one learner in a final ensemble-based approach which uses models built separately on data from other sources such as Google Health data and Reddit language model data.&lt;/p&gt;
 
 &lt;h2 id=&#34;approaches&#34;&gt;Approaches&lt;/h2&gt;
 
@@ -50,7 +50,7 @@
 
 &lt;h3 id=&#34;document-embeddings&#34;&gt;Document Embeddings&lt;/h3&gt;
 
-&lt;p&gt;This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&amp;rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or simply sarcasm.&lt;/p&gt;
+&lt;p&gt;This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&amp;rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or casual internet sarcasm.&lt;/p&gt;
 
 &lt;p&gt;To see if this limitation has any effect on the final models used to help predict suicide trends, we are looking into embeddings that are designed to capture document-level patterns. These embeddings can capture much more complex semantic relationships which could be invaluable in our task. Some of the models we&amp;rsquo;re looking at right now include &lt;em&gt;doc2vec&lt;/em&gt; and &lt;em&gt;SBERT&lt;/em&gt;.&lt;/p&gt;
 

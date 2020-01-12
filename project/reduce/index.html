@@ -128,7 +128,7 @@
     
       <meta property="article:published_time" content="2020-01-10T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-12-30T00:27:31-05:00">
+    <meta property="article:modified_time" content="2020-01-12T02:27:35-06:00">
   
 
   
@@ -471,7 +471,7 @@
 
 
 <meta content="2020-01-10 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-<meta content="2019-12-30 00:27:31 -0500 -0500" itemprop="dateModified">
+<meta content="2020-01-12 02:27:35 -0600 CST" itemprop="dateModified">
 
 <div class="article-metadata">
 
@@ -486,7 +486,7 @@
           Last updated on
       
     
-    <time>Dec 30, 2019</time>
+    <time>Jan 12, 2020</time>
   </span>
   
 
@@ -626,13 +626,13 @@
 
 <h2 id="background">Background</h2>
 
-<p>The <a href="https://socweb.cc.gatech.edu/projects/" target="_blank">REDUCE</a> project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&rsquo;ve partnered with the CDC to use historical trends with social media data to forecast future trends week-to-week.</p>
+<p>The <a href="https://socweb.cc.gatech.edu/projects/" target="_blank">REDUCE</a> project seeks to improve real-time estimation of suicide rates to better enable suicide prevention activities. We&rsquo;ve partnered with the CDC to use historical trends with other signals such as social media data to forecast suicide trends week-to-week.</p>
 
 <p>One of the motivations for integrating social media data is the speed at which up-to-date social media can be obtained &ndash; instantly. In contrast, the ground-truth suicide trend data takes nearly two years for the CDC to aggregate and publish, which presents problems for real-time estimation of suicide trends.</p>
 
-<p>For my role in this project, I&rsquo;ve primarily worked on extracting meaninful signals from social media data we&rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which comprises of over 9 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide collected for a 3 year timespan.</p>
+<p>For my role in this project, I&rsquo;ve primarily worked on extracting meaninful signals from the social media data we&rsquo;ve collected. Most of my time has been spent on the Twitter dataset, which has over 63 million tweets focused around a selected set of keyword phrases related to depression, anxiety, and suicide.</p>
 
-<p>I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features <code>X</code> with the target variable <code>y</code> being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this <code>y</code> fairly accurately. This regression model would then serve as one learner in a final ensemble approach which uses models built separately on data from other sources such as CDC suicide data, Google Health data, Reddit language model data, etc.</p>
+<p>I worked on creating embeddings of these tweets that would then be aggregated on a weekly basis. These aggregations would then represent the mass of tweets for that week and could then be used as the features <code>X</code> with the target variable <code>y</code> being the true number of suicide attempts that week (provided by the CDC). With the right embedding, we could train regression models to predict this <code>y</code> fairly accurately. This regression model would then serve as one learner in a final ensemble-based approach which uses models built separately on data from other sources such as Google Health data and Reddit language model data.</p>
 
 <h2 id="approaches">Approaches</h2>
 
@@ -655,7 +655,7 @@
 
 <h3 id="document-embeddings">Document Embeddings</h3>
 
-<p>This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or simply sarcasm.</p>
+<p>This is a new direction we are currently exploring. One crucial limitation of the Bag of Words approach is that the model doesn&rsquo;t take into consideration any sentence structure. This could be problematic especially with our task since certain ways of phrasing a set of words could be perceived as either cause for alarm or casual internet sarcasm.</p>
 
 <p>To see if this limitation has any effect on the final models used to help predict suicide trends, we are looking into embeddings that are designed to capture document-level patterns. These embeddings can capture much more complex semantic relationships which could be invaluable in our task. Some of the models we&rsquo;re looking at right now include <em>doc2vec</em> and <em>SBERT</em>.</p>
 
